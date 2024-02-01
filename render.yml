@@ -1,0 +1,52 @@
+services:
+  - name: cache
+    image: redis:4-alpine
+    domains:
+      - cache.green.dev
+
+  - name: database
+    image: mysql:8.0-oracle
+    envVars:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: fleetbase
+  domains:
+      - mysql.green.dev
+
+  - name: socket
+    image: socketcluster/socketcluster:v17.4.0
+    envVars:
+      SOCKETCLUSTER_WORKERS: 10
+      SOCKETCLUSTER_BROKERS: 10
+    ports:
+      - 8000
+    domains:
+      - socket.green.dev
+
+  - name: console
+    envVars:
+      ENVIRONMENT: development
+    buildCommand: docker build -t my-console-image -f console/Dockerfile .
+    startCommand: docker run -p 4200:4200 my-console-image
+    domains:
+      - console.green.dev
+
+  - name: application
+    buildCommand: docker build -t my-app-image -f docker/Dockerfile .
+    domains:
+      - tms.green.dev
+    envVars:
+      DATABASE_URL: "mysql://root@mysql.green.dev/fleetbase"
+      CACHE_DRIVER: redis
+      CACHE_PATH: /var/www/html/api/storage/framework/cache
+      CACHE_URL: tcp://cache.green.dev
+      REDIS_URL: tcp://cache.green.dev
+      SESSION_DOMAIN: green.dev
+      BROADCAST_DRIVER: socketcluster
+      MAIL_FROM_NAME: Green
+      APP_NAME: Green
+      LOG_CHANNEL: daily
+    ports:
+      - 80:8000
+    dependsOn:
+      - database
+      - cache
