@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('FILESYSTEM_DRIVER', 'local'),
+    'default' => env('FILESYSTEM_DRIVER', 'public'),
 
     /*
     |--------------------------------------------------------------------------
@@ -58,6 +58,7 @@ return [
             'bucket' => env('GOOGLE_CLOUD_STORAGE_BUCKET', env('AWS_BUCKET')),
             'path_prefix' => env('GOOGLE_CLOUD_STORAGE_PATH_PREFIX', null),
             'storage_api_uri' => env('GOOGLE_CLOUD_STORAGE_API_URI', env('AWS_URL')),
+            'visibility_handler' => \League\Flysystem\GoogleCloudStorage\UniformBucketLevelAccessVisibility::class,
         ],
     ],
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Exit the script as soon as a command fails
 set -e
@@ -17,3 +17,6 @@ php artisan fleetbase:seed
 
 # Restart queue
 php artisan queue:restart
+
+# Sync scheduler
+php artisan schedule-monitor:sync

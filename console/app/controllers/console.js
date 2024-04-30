@@ -52,6 +52,13 @@ export default class ConsoleController extends Controller {
     @service router;
 
     /**
+     * Inject the `intl` service.
+     *
+     * @var {Service}
+     */
+    @service intl;
+
+    /**
      * Inject the `universe` service.
      *
      * @var {Service}
@@ -167,6 +174,7 @@ export default class ConsoleController extends Controller {
     @action setSidebarContext(sidebarContext) {
         this.sidebarContext = sidebarContext;
         this.universe.sidebarContext = sidebarContext;
+        this.universe.trigger('sidebarContext.available', sidebarContext);
 
         if (this.hiddenSidebarRoutes.includes(this.router.currentRouteName)) {
             this.sidebarContext.hideNow();
@@ -205,8 +213,8 @@ export default class ConsoleController extends Controller {
         const country = this.currentUser.country;
 
         this.modalsManager.show('modals/create-or-join-org', {
-            title: 'Create or join a organization',
-            acceptButtonText: 'Confirm',
+            title: this.intl.t('console.create-or-join-organization.modal-title'),
+            acceptButtonText: this.intl.t('common.confirm'),
             acceptButtonIcon: 'check',
             acceptButtonIconPrefix: 'fas',
             action: 'join',
@@ -226,13 +234,22 @@ export default class ConsoleController extends Controller {
                 const { action, next, name, description, phone, currency, country, timezone } = modal.getOptions();
 
                 if (action === 'join') {
-                    return this.fetch.post('auth/join-organization', { next }).then(() => {
-                        this.fetch.flushRequestCache('auth/organizations');
-                        this.notifications.success('You have joined a new organization!');
-                        setTimeout(() => {
-                            window.location.reload();
-                        }, 900);
-                    });
+                    return this.fetch
+                        .post('auth/join-organization', { next })
+                        .then(() => {
+                            this.fetch.flushRequestCache('auth/organizations');
+                            this.notifications.success(this.intl.t('console.create-or-join-organization.join-success-notification'));
+                            later(
+                                this,
+                                () => {
+                                    window.location.reload();
+                                },
+                                900
+                            );
+                        })
+                        .catch((error) => {
+                            this.notifications.serverError(error);
+                        });
                 }
 
                 return this.fetch
@@ -246,7 +263,7 @@ export default class ConsoleController extends Controller {
                     })
                     .then(() => {
                         this.fetch.flushRequestCache('auth/organizations');
-                        this.notifications.success('You have created a new organization!');
+                        this.notifications.success(this.intl.t('console.create-or-join-organization.create-success-notification'));
                         later(
                             this,
                             () => {
@@ -254,6 +271,9 @@ export default class ConsoleController extends Controller {
                             },
                             900
                         );
+                    })
+                    .catch((error) => {
+                        this.notifications.serverError(error);
                     });
             },
         });
@@ -270,9 +290,9 @@ export default class ConsoleController extends Controller {
         }
 
         this.modalsManager.confirm({
-            title: `Are you sure you want to switch organization to ${organization.name}?`,
-            body: `By confirming your account will remain logged in, but your primary organization will be switched.`,
-            acceptButtonText: `Yes, I want to switch organization`,
+            title: this.intl.t('console.switch-organization.modal-title', { organizationName: organization.name }),
+            body: this.intl.t('console.switch-organization.modal-body'),
+            acceptButtonText: this.intl.t('console.switch-organization.modal-accept-button-text'),
             acceptButtonScheme: 'primary',
             confirm: (modal) => {
                 modal.startLoading();
@@ -281,10 +301,14 @@ export default class ConsoleController extends Controller {
                     .post('auth/switch-organization', { next: organization.uuid })
                     .then(() => {
                         this.fetch.flushRequestCache('auth/organizations');
-                        this.notifications.success('You have switched organizations');
-                        setTimeout(() => {
-                            window.location.reload();
-                        }, 900);
+                        this.notifications.success(this.intl.t('console.switch-organization.success-notification'));
+                        later(
+                            this,
+                            () => {
+                                window.location.reload();
+                            },
+                            900
+                        );
                     })
                     .catch((error) => {
                         this.notifications.serverError(error);
@@ -295,8 +319,8 @@ export default class ConsoleController extends Controller {
 
     @action viewChangelog() {
         this.modalsManager.show('modals/changelog', {
-            title: 'Changelog',
-            acceptButtonText: 'OK',
+            title: this.intl.t('common.changelog'),
+            acceptButtonText: this.intl.t('common.ok'),
             hideDeclineButton: true,
         });
     }

@@ -7,7 +7,7 @@ metadata:
     {{- include "helm.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
-  replicas: {{ .Values.replicaCount }}
+  replicas: 1
   {{- end }}
   selector:
     matchLabels:
@@ -35,7 +35,11 @@ spec:
           command: ["php", "artisan", "queue:work"]
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
+          {{- if .Values.gcp }}
           image: "{{ .Values.image.repository }}/events:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          {{- else }}
+          image: "{{ .Values.image.repository }}:events-{{ .Values.image.tag | default .Chart.AppVersion }}"
+          {{- end }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
             - secretRef:
@@ -66,7 +70,7 @@ metadata:
     {{- include "helm.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
-  replicas: {{ .Values.replicaCount }}
+  replicas: 1
   {{- end }}
   selector:
     matchLabels:
@@ -93,7 +97,11 @@ spec:
         - name: scheduler
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
+          {{- if .Values.gcp }}
           image: "{{ .Values.image.repository }}/scheduler:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          {{- else }}
+          image: "{{ .Values.image.repository }}:scheduler-{{ .Values.image.tag | default .Chart.AppVersion }}"
+          {{- end }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
             - secretRef:
