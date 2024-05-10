@@ -4,17 +4,6 @@ services:
   cache:
     image: redis:4-alpine
 
-  database:
-    image: mysql:8.0-oracle
-    ports:
-      - "3306:3306"
-    volumes:
-      - "./docker/database/:/docker-entrypoint-initdb.d/"
-      - "./docker/database/mysql:/var/lib/mysql"
-    environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      MYSQL_DATABASE: "fleetbase"
-
   socket:
     image: socketcluster/socketcluster:v17.4.0
     ports:
@@ -24,12 +13,7 @@ services:
       SOCKETCLUSTER_BROKERS: 10
 
   queue:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-      target: events-dev
-      args:
-        ENVIRONMENT: development
+    image: rg.fr-par.scw.cloud/funcscwmodernwmsc0jozcqg/queue_fleetbase:latest
     environment:
       #DATABASE_URL: "mysql://fleetbase_admin:Fleet-Password-123@51.159.8.181:27421/fleetbase"
       DB_DATABASE: fleetbase
@@ -40,46 +24,47 @@ services:
       QUEUE_CONNECTION: redis
       CACHE_DRIVER: redis
       CACHE_PATH: /fleetbase/api/storage/framework/cache
-      CACHE_URL: tcp://cache
-      REDIS_URL: tcp://cache
+      REDIS_HOST: "redis-16519.c311.eu-central-1-1.ec2.redns.redis-cloud.com"
+      REDIS_PASSWORD: "9n5Zybqc1qoDedBUicSArgOaVVfA5Op4"
+      REDIS_PORT: 16519
 
   console:
     ports:
       - "4200:4200"
     volumes:
       - ./console:/app/console
-    build:
-      context: .
-      dockerfile: console/Dockerfile
-      args:
-        ENVIRONMENT: development
+    image: rg.fr-par.scw.cloud/funcscwmodernwmsc0jozcqg/console_fleetbase:latest
 
   application:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-      target: app-dev
-      args:
-        ENVIRONMENT: development
-        GITHUB_AUTH_KEY: ${GITHUB_AUTH_KEY}
+    image: rg.fr-par.scw.cloud/funcscwmodernwmsc0jozcqg/app_fleetbase:latest
     environment:
-      DATABASE_URL: "mysql://fleetbase_admin:Fleet-Password-123@51.159.8.181:27421/fleetbase"
+    APP_NAME:
+      DB_DATABASE: fleetbase
+      DB_HOST: "51.159.9.181"
+      DB_PORT: 27421
+      DB_USERNAME: fleetbase_admin
+      DB_PASSWORD: Fleet-Password-123
+      MAIL_FROM_ADDRESS: "hello@reveride.pro"
+      MAIL_FROM_NAME: "GreenTMS"
+      MAIL_HOST: "smtp.resend.com"
+      MAIL_PASSWORD: "re_5i1gTSrG_3i8otZLFt9juurF9kBavR2aT"
+      MAIL_PORT: 465
+      MAIL_USERNAME: "resend"
+      MAIL_MAILER: "smtp"
       QUEUE_CONNECTION: redis
       CACHE_DRIVER: redis
       CACHE_PATH: /fleetbase/api/storage/framework/cache
-      CACHE_URL: tcp://cache
-      REDIS_URL: tcp://cache
-      SESSION_DOMAIN: localhost
+      REDIS_HOST: "redis-16519.c311.eu-central-1-1.ec2.redns.redis-cloud.com"
+      REDIS_PASSWORD: "9n5Zybqc1qoDedBUicSArgOaVVfA5Op4"
+      REDIS_PORT: 16519
+      SESSION_DOMAIN: reveride.pro
       BROADCAST_DRIVER: socketcluster
-      MAIL_FROM_NAME: Fleetbase
-      APP_NAME: Fleetbase
+      APP_NAME: GreenTMS
       LOG_CHANNEL: daily
       MODEL_CACHE_ENABLED: true
       RESPONSE_CACHE_ENABLED: true
       RESPONSE_CACHE_DRIVER: redis
     depends_on:
-      - database
-      - cache
       - queue
 
   httpd:
