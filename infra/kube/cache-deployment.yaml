@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert --file=../../docker-compose.prod.yml
+    kompose.version: 1.33.0 (HEAD)
+  labels:
+    io.kompose.service: cache
+  name: cache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: cache
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert --file=../../docker-compose.prod.yml
+        kompose.version: 1.33.0 (HEAD)
+      labels:
+        io.kompose.network/fleetbase-default: "true"
+        io.kompose.service: cache
+    spec:
+      containers:
+        - image: redis:4-alpine
+          name: cache
+      restartPolicy: Always

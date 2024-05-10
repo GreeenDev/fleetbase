@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert --file=../../docker-compose.prod.yml
+    kompose.version: 1.33.0 (HEAD)
+  labels:
+    io.kompose.service: application
+  name: application
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: application
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert --file=../../docker-compose.prod.yml
+        kompose.version: 1.33.0 (HEAD)
+      labels:
+        io.kompose.network/fleetbase-default: "true"
+        io.kompose.service: application
+    spec:
+      containers:
+        - env:
+            - name: APP_NAME
+              value: GreenTMS
+            - name: BROADCAST_DRIVER
+              value: socketcluster
+            - name: CACHE_DRIVER
+              value: redis
+            - name: CACHE_PATH
+              value: /fleetbase/api/storage/framework/cache
+            - name: DATABASE_URL
+              value: "mysql://fleetbase_admin:Fleet-Password-123@51.159.8.181:27421/fleetbase"
+            - name: DB_DATABASE
+              value: "fleetbase"
+            - name: DB_HOST
+              value: "51.159.8.181"
+            - name: DB_PASSWORD
+              value: "Fleet-Password-123"
+            - name: DB_PORT
+              value: "27421"
+            - name: DB_USERNAME
+              value: "fleetbase_admin"
+            - name: LOG_CHANNEL
+              value: daily
+            - name: MAIL_FROM_ADDRESS
+              value: hello@reveride.pro
+            - name: MAIL_FROM_NAME
+              value: GreenTMS
+            - name: MAIL_HOST
+              value: smtp.resend.com
+            - name: MAIL_MAILER
+              value: smtp
+            - name: MAIL_PASSWORD
+              value: re_5i1gTSrG_3i8otZLFt9juurF9kBavR2aT
+            - name: MAIL_PORT
+              value: "465"
+            - name: MAIL_USERNAME
+              value: resend
+            - name: MODEL_CACHE_ENABLED
+              value: "true"
+            - name: QUEUE_CONNECTION
+              value: redis
+            - name: REDIS_HOST
+              value: redis-16519.c311.eu-central-1-1.ec2.redns.redis-cloud.com
+            - name: REDIS_PASSWORD
+              value: 9n5Zybqc1qoDedBUicSArgOaVVfA5Op4
+            - name: REDIS_PORT
+              value: "16519"
+            - name: RESPONSE_CACHE_DRIVER
+              value: redis
+            - name: RESPONSE_CACHE_ENABLED
+              value: "true"
+            - name: SESSION_DOMAIN
+              value: reveride.pro
+          image: rg.fr-par.scw.cloud/funcscwmodernwmsc0jozcqg/app_fleetbase:latest
+          name: application
+          ports:
+            - containerPort: 8000
+              hostPort: 8000
+              protocol: TCP
+      restartPolicy: Always

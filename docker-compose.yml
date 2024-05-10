@@ -31,9 +31,9 @@ services:
       args:
         ENVIRONMENT: development
     environment:
-      #DATABASE_URL: "mysql://fleetbase_admin:Fleet-Password-123@51.159.8.181:27421/fleetbase"
+      DATABASE_URL: "mysql://fleetbase_admin:Fleet-Password-123@51.159.8.181:27421/fleetbase"
       DB_DATABASE: fleetbase
-      DB_HOST: "51.159.9.181"
+      DB_HOST: "51.159.8.181"
       DB_PORT: 27421
       DB_USERNAME: fleetbase_admin
       DB_PASSWORD: Fleet-Password-123
@@ -64,6 +64,13 @@ services:
         GITHUB_AUTH_KEY: ${GITHUB_AUTH_KEY}
     environment:
       DATABASE_URL: "mysql://fleetbase_admin:Fleet-Password-123@51.159.8.181:27421/fleetbase"
+      DB_DATABASE: fleetbase
+      DB_HOST: "51.159.8.181"
+      DB_PORT: 27421
+      STOREFRONT_DB_PORT: 27421
+      SANDBOX_DB_PORT: 27421
+      DB_USERNAME: fleetbase_admin
+      DB_PASSWORD: Fleet-Password-123
       QUEUE_CONNECTION: redis
       CACHE_DRIVER: redis
       CACHE_PATH: /fleetbase/api/storage/framework/cache

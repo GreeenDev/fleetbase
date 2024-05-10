@@ -1,0 +1,47 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  labels:
+    app: hello-world
+  name: reveride.com
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: socket.reveride.pro
+      http:
+        paths:
+          - backend:
+              service:
+                name: socket
+                port:
+                  number: 38000
+            path: /
+            pathType: Prefix
+    - host: console.reveride.pro
+      http:
+        paths:
+          - backend:
+              service:
+                name: console
+                port:
+                  number: 4200
+            path: /
+            pathType: Prefix
+    - host: api.reveride.pro
+      http:
+        paths:
+          - backend:
+              service:
+                name: application
+                port:
+                  number: 8000
+            path: /
+            pathType: Prefix
+  tls:
+    - hosts:
+        - api.reveride.pro
+        - console.reveride.pro
+        - socket.reveride.pro
+      secretName: letsencrypt-prod # secret name, same as the privateKeySecretRef in the (Cluster)Issuer

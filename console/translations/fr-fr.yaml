@@ -1,0 +1,339 @@
+app:
+    name: Fleetbase
+terms:
+    new: Nouveau
+    sort: Trier
+    filter: Filtrer
+    columns: Colonnes
+    settings: Paramètres
+    home: Accueil
+    admin: Admin
+    logout: Déconnexion
+    dashboard: Tableau de bord
+    search: Recherche
+    search-input: Entrée de recherche
+common:
+    confirm: Confirmer
+    edit: Modifier
+    save: Sauvegarder
+    save-changes: Enregistrer les modifications
+    cancel: Annuler
+    2fa-config: Configuration 2FA
+    account: Compte
+    admin: Admin
+    branding: Image de marque
+    columns: Colonnes
+    dashboard: Tableau de bord
+    date-of-birth: Date de naissance
+    delete: Supprimer
+    email: Courriel
+    filesystem: Système de fichiers
+    filter: Filtrer
+    home: Accueil
+    logout: Déconnexion
+    mail: Courrier
+    name: Nom
+    new: Nouveau
+    notification-channels: Canaux de notification
+    notifications: Notifications
+    organization: Organisation
+    organizations: Organisations
+    overview: Vue d'ensemble
+    phone: Numéro de téléphone
+    profile: Profil
+    queue: File d'attente
+    save-button-text: Enregistrer les modifications
+    search-input: Entrée de recherche
+    search: Recherche
+    services: Services
+    settings: Paramètres
+    socket: Socket
+    sort: Trier
+    two-factor: Authentification à deux facteurs
+    uploading: Téléchargement...
+    your-profile: Votre profil
+    created-at: Créé le
+    country: Pays
+    phone-number: Téléphone
+    status: Statut
+    close-and-save: Fermer et sauvegarder
+    users: Utilisateurs
+    changelog: Journal des modifications
+    ok: OK
+    select-file: Sélectionner un fichier
+    back: Retour
+    next: Suivant
+    continue: Continuer
+    done: Terminé
+component:
+    file:
+        dropdown-label: Actions de fichier
+    dropzone:
+        file: fichier
+        drop-to-upload: Déposez pour télécharger
+        invalid: Invalide
+        files-ready-for-upload: '{numOfFiles} prêts à être téléchargés.'
+        upload-images-videos: Télécharger des images et vidéos
+        upload-documents: Télécharger des documents
+        upload-documents-files: Télécharger des documents et fichiers
+        upload-avatar-files: Télécharger des avatars personnalisés
+        dropzone-supported-images-videos: Glissez et déposez des fichiers d'image et vidéo ici
+        dropzone-supported-avatars: Glissez et déposez des fichiers SVG ou PNG
+        dropzone-supported-files: Glissez et déposez des fichiers ici
+        or-select-button-text: ou sélectionnez des fichiers à télécharger.
+        upload-queue: File d'attente de téléchargement
+        uploading: Téléchargement...
+    two-fa-enforcement-alert:
+        message: Pour renforcer la sécurité de votre compte, votre organisation exige l'authentification à deux facteurs (2FA). Activez le 2FA dans vos paramètres de compte pour une protection supplémentaire.
+        button-text: Configurer le 2FA
+    comment-thread:
+        publish-comment-button-text: Publier un commentaire
+        publish-reply-button-text: Publier une réponse
+        reply-comment-button-text: Répondre
+        edit-comment-button-text: Modifier
+        delete-comment-button-text: Supprimer
+        comment-published-ago: 'il y a {createdAgo}'
+        comment-input-placeholder: Entrez un nouveau commentaire...
+        comment-reply-placeholder: Entrez votre réponse...
+        comment-input-empty-notification: Vous ne pouvez pas publier de commentaires vides...
+        comment-min-length-notification: Le commentaire doit contenir au moins 2 caractères
+    dashboard:
+        select-dashboard: Sélectionnez un tableau de bord
+        create-new-dashboard: Créer un nouveau tableau de bord
+        create-a-new-dashboard: Créer un nouveau tableau de bord
+        confirm-create-dashboard: Créer le tableau de bord!
+        edit-layout: Modifier la disposition
+        add-widgets: Ajouter des widgets
+        delete-dashboard: Supprimer le tableau de bord
+        save-dashboard: Sauvegarder le tableau de bord
+        you-cannot-delete-this-dashboard: Vous ne pouvez pas supprimer ce tableau de bord.
+        are-you-sure-you-want-delete-dashboard: Êtes-vous sûr de vouloir supprimer ce tableau de bord {dashboardName}?
+    dashboard-widget-panel:
+        widget-name: 'Widget {widgetName}'
+        select-widgets: Sélectionner des widgets
+        close-and-save: Fermer et sauvegarder
+services:
+    dashboard-service:
+        create-dashboard-success-notification: Nouveau tableau de bord `{dashboardName}` créé avec succès.
+        delete-dashboard-success-notification: Tableau de bord `{dashboardName}` supprimé.
+auth:
+    verification:
+        header-title: Vérification du compte
+        title: Vérifiez votre adresse courriel
+        message-text: '<strong>Presque terminé !</strong><br> Vérifiez votre courriel pour un code de vérification.'
+        verification-code-text: Entrez le code de vérification que vous avez reçu par courriel.
+        verification-input-label: Code de vérification
+        verify-button-text: Vérifier et continuer
+        didnt-receive-a-code: Vous n'avez pas encore reçu de code ?
+        not-sent:
+            message: Vous n'avez pas encore reçu de code ?
+            alternative-choice: Utilisez les options alternatives ci-dessous pour vérifier votre compte.
+            resend-email: Renvoyer le courriel
+            send-by-sms: Envoyer par SMS
+    two-fa:
+        verify-code:
+            verification-code: Code de vérification
+            check-title: Vérifiez votre courriel ou téléphone
+            check-subtitle: Nous vous avons envoyé un code de vérification. Entrez le code ci-dessous pour compléter le processus de connexion.
+            expired-help-text: Votre code d'authentification 2FA a expiré. Vous pouvez demander un autre code si vous avez besoin de plus de temps.
+            resend-code: Renvoyer le code
+            verify-code: Vérifier le code
+            cancel-two-factor: Annuler l'authentification à deux facteurs
+            invalid-session-error-notification: Session invalide. Veuillez réessayer.
+            verification-successful-notification: Vérification réussie !
+            verification-code-expired-notification: Le code de vérification a expiré. Veuillez en demander un nouveau.
+            verification-code-failed-notification: La vérification a échoué. Veuillez réessayer.
+        resend-code:
+            verification-code-resent-notification: Nouveau code de vérification envoyé.
+            verification-code-resent-error-notification: Erreur lors du renvoi du code de vérification. Veuillez réessayer.
+    forgot-password:
+        success-message: Consultez votre courriel pour continuer !
+        is-sent:
+            title: Presque terminé !
+            message: '<strong>Consultez votre courriel !</strong><br> Nous vous avons envoyé un lien magique à votre courriel qui vous permettra de réinitialiser votre mot de passe. Le lien expire dans 15 minutes.'
+        not-sent:
+            title: Mot de passe oublié ?
+            message: "<strong>Ne vous inquiétez pas, nous sommes là pour vous aider.</strong><br> Entrez l'adresse courriel que vous utilisez pour vous connecter à {appName} et nous vous enverrons un lien sécurisé pour réinitialiser votre mot de passe."
+        form:
+            email-label: Votre adresse courriel
+            submit-button: OK, envoyez-moi le lien magique !
+            nevermind-button: Laissez tomber
+    login:
+        title: Connectez-vous à votre compte
+        no-identity-notification: Avez-vous oublié d'entrer votre courriel ?
+        no-password-notification: Avez-vous oublié d'entrer votre mot de passe ?
+        unverified-notification: Votre compte doit être vérifié pour continuer.
+        failed-attempt:
+            message: '<strong>Mot de passe oublié ?</strong><br> Cliquez sur le bouton ci-dessous pour réinitialiser votre mot de passe.'
+            button-text: Ok, aidez-moi à réinitialiser !
+        form:
+            email-label: Adresse courriel
+            password-label: Mot de passe
+            remember-me-label: Se souvenir de moi
+            forgot-password-label: Mot de passe oublié ?
+            sign-in-button: Se connecter
+            create-account-button: Créer un nouveau compte
+        slow-connection-message: Problèmes de connectivité.
+    reset-password:
+        success-message: Votre mot de passe a été réinitialisé ! Connectez-vous pour continuer.
+        invalid-verification-code: Ce lien de réinitialisation de mot de passe est invalide ou expiré.
+        title: Réinitialisez votre mot de passe
+        form:
+            code:
+                label: Votre code de réinitialisation
+                help-text: Le code de vérification que vous avez reçu dans votre courriel.
+            password:
+                label: Nouveau mot de passe
+                help-text: Entrez un mot de passe d'au moins 6 caractères pour continuer.
+            confirm-password:
+                label: Confirmez le nouveau mot de passe
+                help-text: Entrez un mot de passe d'au moins 6 caractères pour continuer.
+            submit-button: Réinitialiser le mot de passe
+            back-button: Retour
+console:
+    create-or-join-organization:
+        modal-title: Créer ou rejoindre une organisation
+        join-success-notification: Vous avez rejoint une nouvelle organisation !
+        create-success-notification: Vous avez créé une nouvelle organisation !
+    switch-organization:
+        modal-title: Êtes-vous sûr de vouloir changer d'organisation pour {organizationName} ?
+        modal-body: En confirmant, votre compte restera connecté, mais votre organisation principale sera modifiée.
+        modal-accept-button-text: Oui, je veux changer d'organisation
+        success-notification: Vous avez changé d'organisation
+    account:
+        index:
+            upload-new: Télécharger nouveau
+            phone: Votre numéro de téléphone.
+            photos: photos
+    admin:
+        schedule-monitor:
+            schedule-monitor: Moniteur d'horaire
+            task-logs-for: 'Journaux de tâches pour :'
+            showing-last-count: Affichage des derniers {count} journaux
+            name: Nom
+            type: Type
+            timezone: Fuseau horaire
+            last-started: Dernier début
+            last-finished: Dernière fin
+            last-failure: Dernier échec
+            date: Date
+            memory: Mémoire
+            runtime: Durée d'exécution
+            output: Sortie
+            no-output: Pas de sortie
+        config:
+            database:
+                title: Configuration de la base de données
+            filesystem:
+                title: Configuration du système de fichiers
+            mail:
+                title: Configuration du courrier
+            notification-channels:
+                title: Configuration des canaux de notification
+            queue:
+                title: Configuration de la file d'attente
+            services:
+                title: Configuration des services
+            socket:
+                title: Configuration du socket
+        branding:
+            title: Image de marque
+            icon-text: Icône
+            upload-new: Télécharger nouveau
+            reset-default: Réinitialiser par défaut
+            logo-text: Logo
+            theme: Thème par défaut
+        index:
+            total-users: Total des utilisateurs
+            total-organizations: Total des organisations
+            total-transactions: Total des transactions
+        notifications:
+            title: Notifications
+            notification-settings: Paramètres de notification
+        organizations:
+            index:
+                title: Organisations
+                owner-name-column: Propriétaire
+                owner-phone-column: Téléphone du propriétaire
+                owner-email-column: Courriel du propriétaire
+                users-count-column: Utilisateurs
+                phone-column: Téléphone
+                email-column: Courriel
+            users:
+                title: Utilisateurs
+    settings:
+        index:
+            title: Paramètres de l'organisation
+            organization-name: Nom de l'organisation
+            organization-description: Description de l'organisation
+            organization-phone: Numéro de téléphone de l'organisation
+            organization-currency: Monnaie de l'organisation
+            organization-id: ID de l'organisation
+            organization-branding: Image de marque de l'organisation
+            logo: Logo
+            logo-help-text: Logo de votre organisation.
+            upload-new-logo: Télécharger un nouveau logo
+            backdrop: Fond
+            backdrop-help-text: Image de fond ou bannière facultative pour votre organisation.
+            upload-new-backdrop: Télécharger un nouveau fond
+    extensions:
+        title: Les extensions arrivent bientôt !
+        message: Revenez dans les prochaines versions alors que nous préparons le lancement du dépôt et du marché des extensions.
+    notifications:
+        select-all: Sélectionner tout
+        mark-as-read: Marquer comme lu
+        received: 'Reçu :'
+        message: Aucune notification à afficher.
+invite:
+    for-users:
+        invitation-message: Vous êtes invité à rejoindre {companyName}
+        invitation-sent-message: Vous êtes invité à rejoindre l'organisation {companyName} sur {appName}. Pour accepter cette invitation, entrez votre code d'invitation reçu par courriel et cliquez sur continuer.
+        invitation-code-sent-text: Votre code d'invitation
+        accept-invitation-text: Accepter l'invitation
+onboard:
+    index:
+        title: Créez votre compte
+        welcome-title: '<strong>Bienvenue chez {companyName} !</strong><br />'
+        welcome-text: Complétez les détails requis ci-dessous pour commencer.
+        full-name: Nom complet
+        full-name-help-text: Votre nom complet
+        your-email: Adresse courriel
+        your-email-help-text: Votre adresse courriel
+        phone: Numéro de téléphone
+        phone-help-text: Votre numéro de téléphone
+        organization-name: Nom de l'organisation
+        organization-help-text: Votre nom d'organisation, tous vos services et ressources seront gérés sous cette organisation, plus tard vous pourrez créer autant d'organisations que vous voulez ou avez besoin.
+        password: Entrez un mot de passe
+        password-help-text: Votre mot de passe, assurez-vous qu'il soit bon.
+        confirm-password: Confirmez votre mot de passe
+        confirm-password-help-text: Juste pour confirmer le mot de passe que vous avez entré ci-dessus.
+        continue-button-text: Continuer
+    verify-email:
+        header-title: Vérification du compte
+        title: Vérifiez votre adresse courriel
+        message-text: '<strong>Presque terminé !</strong><br> Vérifiez votre courriel pour un code de vérification.'
+        verification-code-text: Entrez le code de vérification que vous avez reçu par courriel.
+        verification-input-label: Code de vérification
+        verify-button-text: Vérifier et continuer
+        didnt-receive-a-code: Vous n'avez pas encore reçu de code ?
+        not-sent:
+            message: Vous n'avez pas encore reçu de code ?
+            alternative-choice: Utilisez les options alternatives ci-dessous pour vérifier votre compte.
+            resend-email: Renvoyer le courriel
+            send-by-sms: Envoyer par SMS
+install:
+    installer-header: Installateur
+    failed-message-sent: L'installation a échoué ! Cliquez sur le bouton ci-dessous pour réessayer.
+    retry-install: Réessayer l'installation
+    start-install: Commencer l'installation
+layout:
+    header:
+        menus:
+            organization:
+                settings: Paramètres de l'organisation
+                create-or-join: Créer ou rejoindre des organisations
+                explore-extensions: Explorer les extensions
+            user:
+                view-profile: Voir le profil
+                keyboard-shortcuts: Afficher les raccourcis clavier
+                changelog: Journal des modifications

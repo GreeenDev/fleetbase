@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert --file=../../docker-compose.prod.yml
+    kompose.version: 1.33.0 (HEAD)
+  labels:
+    io.kompose.service: socket
+  name: socket
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: socket
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert --file=../../docker-compose.prod.yml
+        kompose.version: 1.33.0 (HEAD)
+      labels:
+        io.kompose.network/fleetbase-default: "true"
+        io.kompose.service: socket
+    spec:
+      containers:
+        - env:
+            - name: SOCKETCLUSTER_BROKERS
+              value: "10"
+            - name: SOCKETCLUSTER_WORKERS
+              value: "10"
+          image: socketcluster/socketcluster:v17.4.0
+          name: socket
+          ports:
+            - containerPort: 8000
+              hostPort: 38000
+              protocol: TCP
+      restartPolicy: Always
