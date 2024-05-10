@@ -66,12 +66,3 @@ services:
       RESPONSE_CACHE_DRIVER: redis
     depends_on:
       - queue
-
-  httpd:
-    build:
-      context: .
-      dockerfile: docker/httpd/Dockerfile
-    ports:
-      - "8000:80"
-    depends_on:
-      - application
