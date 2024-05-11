@@ -337,3 +337,2182 @@ layout:
                 view-profile: Voir le profil
                 keyboard-shortcuts: Afficher les raccourcis clavier
                 changelog: Journal des modifications
+storefront:
+  extension-name: Vitrine
+  common:
+    address: Adresse
+    alerts: Alertes
+    amount: Montant
+    api: API
+    back: Retour
+    backdrop: Fond
+    building: Bâtiment
+    bulk-action: Action groupée
+    cash: Espèces
+    city: Ville
+    config: Configuration
+    coordinates: Coordonnées
+    country: Pays
+    created: Créé
+    currency: Devise
+    customer: Client
+    customers: Clients
+    category: Catégorie
+    delivery-tip: Pourboire de livraison
+    delivery: Livraison
+    details: Détails
+    description: Description
+    driver: Conducteur
+    dropoff: Livraison
+    earning: Gains
+    email: Email
+    export: Exporter
+    id: ID
+    internal-id: ID interne
+    import: Importer
+    invalid: Invalide
+    loading: Chargement...
+    logo: logo
+    name: Nom
+    neighborhood: Quartier
+    online: En ligne
+    orders: Commandes
+    phone: Téléphone
+    photos: Photos
+    pickup: Enlèvement
+    product: Produits
+    remove: Retirer
+    state: État
+    status: Statut
+    store: Magasin
+    street-1: Rue 1
+    storefront: Façade
+    tag: Étiquettes
+    tip: Pourboire
+    title: Titre
+    total: Total
+    type: Type
+    upload-new: Télécharger nouveau
+    uploading: Téléchargement...
+    view: Voir
+    website: Site Web
+    edit: Éditer
+    delete: Supprimer
+    network: Réseaux
+    file: fichiers
+    general: Général
+    location: Emplacement
+    notification: Notification
+    gateways: Passerelles
+    settings: Paramètres
+    new: Nouveau
+    facebook: Facebook
+    instagram: Instagram
+    twitter: Twitter
+  sidebar:
+    storefront: Vitrine
+    dashboard: Tableau de bord
+    products: Produits
+    customers: Clients
+    orders: Commandes
+    networks: Réseaux
+    settings: Paramètres
+    launch-app: Lancer l'application
+  component:
+    storefront-order-summary:
+      order-summary-title: Résumé de la commande de la vitrine
+    modals:
+      add-store-hours:
+        start-time: Heure de début
+        operation-start: Heure de début de disponibilité/activité
+        end-time: Heure de fin
+        operation-end: Heure de fin des heures d'activité
+      assign-driver:
+        message-driver: Sélectionnez un conducteur pour assigner à cette commande.
+        name-driver: Sélectionner le conducteur
+        placeholder-driver: Sélectionner le conducteur à assigner
+      create-first-store:
+        title: Bienvenue sur Storefront!
+        message: Storefront vous permet de configurer rapidement un magasin dynamique à la demande alimenté par Fleetbase.
+        submit-message: Soumettez le formulaire ci-dessous pour créer votre premier magasin.
+        storefront-name: Nom de la vitrine
+        enter-name: Entrez le nom de votre magasin
+        description: Description de la vitrine
+        brief-description: Donnez une brève description de votre magasin sur les types de choses vendues
+        currency: Devise de la vitrine
+        select-currency: Sélectionnez la devise par défaut pour votre vitrine
+      create-getaway:
+        getaway: Type de passerelle
+        getaway-text: Sélectionnez le type de passerelle
+        getaway-name: Nom de la passerelle
+        name-text: Donnez un nom à votre passerelle de paiement, cela sera seulement pertinent en interne
+        getaway-code: Code de la passerelle
+        code-text: Code identifiant utilisé pour identifier la passerelle au SDK
+        callback-url: URL de rappel
+        callback-text: URL de rappel si applicable
+        return-url: URL de retour
+        return-text: URL de retour si applicable
+        sandbox-getaway: Ceci est une passerelle sandbox
+      create-network-category:
+        parent-category: Catégorie parente
+        select-parent: Sélectionnez une catégorie parente si elle existe
+        category-name: Nom de la catégorie
+        name-text: Entrez un nom pour la catégorie
+        description: Description de la catégorie
+        description-text: Donnez une brève description de votre catégorie de réseau
+        category-icon: Type d'icône de catégorie
+      create-network:
+        title: Créer un réseau
+        message-line1: Storefront vous permet de créer rapidement des marchés, permettant à plusieurs vitrines de vendre sous une bannière commune.
+        message-line2: Lorsque vous créez le réseau, vous définissez vos règles et vous pouvez étendre votre réseau par des invitations.
+        message-line3: Commencez par créer un réseau ci-dessous.
+        name: Nom du réseau
+        name-text: Entrez le nom de votre magasin
+        description: Description du réseau
+        description-text: Donnez une brève description de votre magasin sur les types de choses vendues
+        currency: Devise du réseau
+        currency-text: Sélectionnez la devise par défaut pour votre vitrine
+      create-new-variant:
+        name: Nom de la variante
+        name-text: Donnez un nom à votre variante de produit
+        description: Description de la variante
+        description-text: Description courte de la variante
+        checkbox-1: Permettre à l'utilisateur de sélectionner plusieurs options de variantes à la fois
+        checkbox-2: Cette sélection de variante de produit est requise
+      create-notification-channel:
+        title: Canal
+        title-text: Sélectionnez le canal de notification
+        name: Nom du canal
+        name-text: Donnez un nom à votre canal de notification, cela sera seulement pertinent en interne
+        key: Clé du canal
+        key-text: Ceci est votre clé de canal de notification, utilisez-la pour spécifier quelles applications doivent utiliser ce canal de notification via les configurations sdk.
+      create-product-category:
+        name: Nom de la catégorie
+        name-text: Entrez un nom pour la catégorie
+        description: Description de la catégorie
+        description-text: Donnez une brève description de votre catégorie de produit
+        icon: Icône de la catégorie
+        uploading-new: Télécharger une nouvelle icône de catégorie
+      create-store:
+        name: Nom de la vitrine
+        name-text: Entrez le nom de votre magasin
+        description: Description de la vitrine
+        description-text: Donnez une brève description de votre magasin sur les types de choses vendues
+        currency: Devise de la vitrine
+        currency-text: Sélectionnez la devise par défaut pour votre vitrine
+      import-products:
+        uploading-message: Traitement de l'importation...
+        drop-upload: Déposer pour télécharger
+        ready-upload: prêt pour le téléchargement.
+        upload-spreadsheets: Télécharger des feuilles de calcul
+        drag-drop: Glissez et déposez des fichiers de feuille de calcul sur cette zone de dépôt
+        select-spreadsheets: ou sélectionnez des feuilles de calcul à télécharger.
+        upload-queue: File d'attente de téléchargement
+        optionally-select-category: Sélectionnez éventuellement une catégorie pour importer des produits
+        select-category: Sélectionner la catégorie
+      incoming-order:
+        assigned: Conducteur assigné
+        not-assigned: Aucun conducteur assigné
+        no-phone: Pas de téléphone
+        change-driver: Changer de conducteur
+        assign-driver: Assigner un conducteur
+        pickup-order: Le client doit récupérer la commande de
+        address: Adresse du client
+        tracking: Suivi
+        summary: Résumé de la commande
+        subtotal: Sous-total
+        fee: Frais de livraison
+        tip: Pourboire
+        delivery-tip: Pourboire de livraison
+      manage-addons:
+        title: Nouvelle catégorie
+        delete: Supprimer la catégorie
+        new-addon: Nouveau complément
+        addon-name: Nom du complément
+        description: Description du complément
+        delete-this-addon-category-assosiated-will-lost: Êtes-vous sûr de vouloir supprimer cette catégorie de complément ? Tous les compléments associés seront perdus !
+        untitled-addon-category: Catégorie de complément sans titre
+      order-ready-assign-driver:
+        driver-dispatch: Vous êtes sur le point de définir cette commande comme prête et de l'expédier, utilisez la liste déroulante ci-dessous pour sélectionner un conducteur à envoyer. <br><br> Ou vous pouvez choisir d'expédier la commande de manière ad hoc, ce qui signalera la commande à tous les conducteurs à proximité pour être acceptée.
+        adhoc-dispatch-nearby-drivers: Expédition ad hoc aux conducteurs à proximité
+        select-driver: Sélectionner le conducteur
+        select-driver-to-assign: Sélectionner le conducteur à assigner
+      share-network:
+        invite-member: Inviter des membres à votre réseau
+        email-below: Obtenez un lien d'invitation partageable ou envoyez des invitations individuelles par email ci-dessous.
+        invite-network: Entrez les emails des personnes ou des organisations que vous souhaitez inviter à votre réseau.
+        add-email: Ajouter des emails
+        get-link: Obtenir le lien
+        enable-shareable-link: Activer le lien partageable
+        anyone-with-this-link-able-to-join-your-network: Toute personne possédant ce lien pourra rejoindre votre réseau
+      store-form:
+        storefront-name: Nom de la vitrine
+        the-name-of-your-store: Le nom de votre magasin.
+        storefront-description-placeholder: Description de la vitrine
+        give-your-store-brief-description: Donnez une brève description de votre magasin pour informer les utilisateurs de ce que vous vendez.
+        add-tags-placeholder: Ajouter des étiquettes
+      store-location-form:
+        street-2: Rue 2
+        security-access-code: Code d'accès de sécurité
+        postal-code: Code postal
+    widget:
+      key-metrics:
+        title: Métriques de la vitrine
+      customers:
+        widget-title: Clients récents
+        phone: Téléphone
+        email: Email
+      orders:
+        widget-title: Commandes récentes
+        id-column: ID de commande
+        accept-order: Accepter la commande
+        mark-as-ready: Marquer comme prêt !
+        mark-as-completed: Marquer comme complété
+        more-details: Plus de détails
+        customer: Client
+        driver: Conducteur
+        subtotal: Sous-total
+        delivery-fee: Frais de livraison
+        delivery-tip: Pourboire de livraison
+        tip: Pourboire
+        change-driver: Changer de conducteur
+        assign-driver: Assigner un conducteur
+        mark-as-ready-modal-pickup-title: Marquer la commande prête pour l'enlèvement ?
+        mark-as-ready-modal-pickup-body: Marquer la commande comme prête notifiera le client que sa commande est prête à être récupérée !
+        mark-as-ready-modal-pickup-accept-button-text: Prêt pour l'enlèvement !
+        mark-as-ready-modal-not-adhoc-title: Assigner un conducteur et expédier les commandes
+        mark-as-ready-modal-not-adhoc-accept-button-text: Assigner & Expédier !
+        mark-as-ready-modal-title: Voulez-vous marquer la commande comme prête ?
+        mark-as-ready-modal-body: Marquer la commande comme prête expédiera la commande aux conducteurs à proximité, ne marquez la commande comme prête que lorsqu'elle peut être récupérée.
+        mark-as-ready-modal-accept-button-text: Expédier !
+        mark-as-completed-modal-title: Êtes-vous sûr de vouloir marquer la commande comme complétée ?
+        mark-as-completed-modal-body: Marquer la commande comme complétée est une confirmation que le client a récupéré la commande et que la commande est terminée.
+        mark-as-completed-accept-button-text: Commande complétée !
+        assign-driver-modal-title: Assigner un conducteur
+        assign-driver-modal-accept-button-text: Assigner un conducteur
+      storefront-metrics:
+        last-day: Derniers 30 jours
+    file-record:
+      delete-this-file: Êtes-vous sûr de vouloir supprimer ce fichier ?
+      delete-this-file-you-will-unable-recover: Une fois ce fichier supprimé, vous ne pourrez pas le récupérer.
+    network-category-picker:
+      no-subcategory: Pas de sous-catégories pour
+      no-categories: Pas de catégories pour ce réseau
+      create-category: Créer une nouvelle catégorie
+    schedule-manager:
+      add-hours: Ajouter des heures
+      add-new-hours-for-day: Ajouter de nouvelles heures pour {day}
+      new-hours-added-for-day: Nouvelles heures ajoutées pour {day}
+      you-wish-to-remove-these-hour: Êtes-vous sûr de vouloir supprimer ces heures ?
+      by-removing-these-operation: En supprimant ces heures d'opération/disponibilité, votre magasin ou produit peut devenir inactif ou indisponible selon l'horaire mis à jour...
+    store-selector:
+      no-stores: Aucun magasin à sélectionner
+      create-storefront: Créer un nouveau
+  home:
+    title: Tableau de bord de la vitrine
+  customers:
+    index:
+      internal-id: ID interne
+      create-at: Créé à
+      update-at: Mis à jour à
+      vendor-action: Actions du vendeur
+      view-customer-details: Voir les détails du client
+      edit-customer: Éditer le client
+      success-message: Votre nouveau réseau de vitrines a été créé !
+      delete-customer: Supprimer le client
+    customer-panel:
+      details:
+        web-url: URL du site web
+      edit-button: Éditer le client
+      cancel-edit-button: Annuler l'édition du client
+      cancel-new-button: Annuler le nouveau client
+  networks:
+    index:
+      network-option: Options du réseau
+      manage-network: Gérer le réseau
+      send-invite: Envoyer des invitations
+      delete-network: Supprimer le réseau
+      create-new-network: Créer un nouveau réseau
+      success-message: Votre nouveau réseau de vitrines a été créé !
+      delete-this-network-all-assigned-stores-customer-order: Êtes-vous sûr de vouloir supprimer ce réseau ({networkName}) ? Tous les magasins assignés, les clients, les commandes ne seront plus accessibles.
+      network:
+        manage-network: Gérer le réseau
+        settings: Paramètres
+        customers: Clients
+        orders: Commandes
+        Network-changes-not-save: Les changements du réseau n'ont pas été sauvegardés !
+        going-back-will-rollback-all-unsaved-changes: Revenir en arrière annulera tous les changements non sauvegardés, êtes-vous sûr de vouloir continuer ?
+        index:
+          change-network-saved: Changements du réseau sauvegardés.
+          create-new-payment-gateway: Créer une nouvelle passerelle de paiement
+          save-gateway: Sauvegarder la passerelle
+          new-gateway-add-network: Nouvelle passerelle ajoutée au réseau
+          payment-gateway-changes-success: Changements de la passerelle de paiement sauvegardés !
+          create-new-notification-channel: Créer un nouveau canal de notification
+          create-notification-channel: Créer un canal de notification
+          notification-channel-add-network: Nouveau canal de notification ajouté au réseau !
+          notification-channel-changes-save: Changements du canal de notification sauvegardés !
+          general-network-settings-title: Paramètres généraux du réseau
+          general-network-settings-subtitle: Fournissez les paramètres généraux pour votre réseau ou marché.
+          general-network-settings-form:
+            save-changes-button-text: Sauvegarder les changements
+            name: Nom
+            name-placeholder: Nom de la vitrine
+            name-help-text: Le nom de votre réseau ou marché.
+            description: Description
+            description-placeholder: Description de la vitrine
+            description-help-text: Donnez une brève description de votre magasin pour informer les utilisateurs de ce que votre réseau propose.
+            currency: Devise
+            contact-social-panel:
+              panel-title: Contact & Réseaux sociaux
+              phone: Téléphone
+              email: Email
+              email-help-text: Votre email professionnel.
+              website: Site web
+              website-help-text: L'URL de votre site web professionnel.
+              facebook: Facebook
+              facebook-help-text: L'ID de votre page Facebook professionnelle.
+              instagram: Instagram
+              instagram-help-text: Le nom d'utilisateur de votre Instagram professionnel.
+              twitter: Twitter
+              twitter-help-text: Le nom d'utilisateur de votre Twitter professionnel.
+            logo-backdrop-panel:
+              panel-title: Logo & Fond
+              logo-label: Logo
+              logo-help-text: Logo de votre magasin.
+              upload-logo-button-text: Télécharger un nouveau logo
+              backdrop-label: Fond
+              backdrop-help-text: Image de fond ou bannière optionnelle pour votre magasin.
+              upload-backdrop-button-text: Télécharger un nouveau fond
+            alert-panel:
+              panel-title: Alertes
+              panel-description: Configurez qui doit être alerté pour certains événements
+              new-order-alert-label: Alerte nouvelle commande
+              new-order-alert-placeholder: Sélectionnez les utilisateurs à alerter pour une nouvelle commande
+            config-switches:
+              online: En ligne
+              enable-tax: Activer la taxe
+              tax-percentage-input-label: Pourcentage de taxe
+              tax-percentage-input-help-text: Le pourcentage de taxe sur les ventes à appliquer aux commandes.
+              auto-accept-incoming-orders: Accepter automatiquement les commandes entrantes
+              auto-dispatch-orders: Expédier automatiquement les commandes
+              require-proof-of-delivery: Exiger une preuve de livraison
+              proof-of-delivery-method-label: Méthode de preuve de livraison
+              enable-cash-on-delivery: Activer le paiement à la livraison
+              enable-order-pickup: Activer l'enlèvement de commande
+              enable-tips: Activer les pourboires
+              enable-delivery-tips: Activer les pourboires de livraison
+              enable-multi-cart-checkout: Activer le paiement multi-panier
+              enable-user-reviews: Activer les avis des utilisateurs
+          api-panel:
+            panel-title: API
+            panel-header: Paramètres API
+            panel-description: Clé d'accès pour l'API Storefront & Intégrations
+            network-key-label: Clé du réseau
+            network-key-help-text: Ceci est votre clé de réseau, utilisez-la pour activer les applications et les intégrations pour votre réseau.
+          payment-gateways-panel:
+            panel-title: Paramètres de la passerelle
+            panel-description: Ajoutez ou gérez ici vos paramètres de passerelle de paiement.
+            new-gateway-button-text: Créer une nouvelle passerelle
+            gateway-form:
+              name: Nom de la passerelle
+              name-help-text: Donnez un nom à votre passerelle de paiement, cela sera seulement pertinent en interne
+              code: Code de la passerelle
+              code-help-text: Code identifiant utilisé pour identifier la passerelle au SDK
+              callback-url: URL de rappel
+              callback-url-help-text: URL de rappel si applicable
+              return-url: URL de retour
+              return-url-help-text: URL de retour si applicable
+              sandbox-toggle-label: Ceci est une passerelle sandbox
+              config-header-label: Configuration
+              delete-gateway-button-text: Supprimer la passerelle de paiement
+          notification-channels-panel:
+            panel-title: Canaux de notification
+            panel-header: Paramètres de notification
+            panel-description: Configurez les canaux de notification pour votre vitrine, chaque canal de notification peut également avoir ses propres règles et options.
+            new-channel-button-text: Créer un nouveau canal
+        stores:
+          store: Magasins
+          add-stores-button-text: Ajouter des magasins
+          invite-stores-button-text: Inviter des magasins
+          created-at: Créé à
+          view-store-details: Voir les détails du magasin
+          edit-store: Éditer le magasin
+          assign-category: Assigner une catégorie
+          remove-store-from-network: Retirer le magasin du réseau
+          delete-network-category: Supprimer la catégorie du réseau ?
+          deleting-category-move-all-stores-inside-on-top-level: La suppression de cette catégorie déplacera tous les magasins à l'intérieur au niveau supérieur, êtes-vous sûr de vouloir supprimer cette catégorie ?
+          add-store-to-category: Ajouter un magasin à la catégorie
+          save-change: Sauvegarder les changements
+          add-new-network-category: Ajouter une nouvelle catégorie de réseau
+          create-new-category: Créer une nouvelle catégorie
+          new-category-created: Nouvelle catégorie créée.
+          network-category-create: Nouvelle catégorie de réseau créée.
+          edit-category: Éditer la catégorie ({categoryName})
+          add-stores-to-network: Ajouter des magasins au réseau
+          network-stores-update: Mise à jour des magasins du réseau.
+          remove-this-store: Retirer ce magasin ({storeName}) de ce réseau ({networkName}) ?
+          done: Terminé
+          longer-findable-by-this-network: Êtes-vous sûr de vouloir retirer ce magasin de ce réseau ? Il ne sera plus trouvable par ce réseau.
+          viewing-storefront: Visualisation de la vitrine de {storeName}
+          editing-storefront: Édition de la vitrine de {storeName}
+          send-invitations: Envoyer des invitations
+          invitation-sent-recipients: Invitations envoyées aux destinataires !
+          invalid-emails-provided-error: Emails invalides fournis !
+  orders:
+    index:
+      internal-id: ID interne
+      customer: Client
+      select-order-customer: Sélectionner le client de la commande
+      select-order-pickup-location: Sélectionner le lieu de collecte de la commande
+      select-order-dropoff-location: Sélectionner le lieu de livraison de la commande
+      scheduled-at: Prévu à
+      transaction-total: Total de la transaction
+      tracking-number: Numéro de suivi
+      driver-assigned: Conducteur assigné
+      select-driver-for-order: Sélectionner un conducteur pour la commande
+      created-at: Créé à
+      updated-at: Mis à jour à
+      created-by: Créé par
+      updated-by: Mis à jour par
+      select-user: Sélectionner l'utilisateur
+      view-order: Voir la commande
+      cancel-order: Annuler la commande
+      delete-order: Supprimer la commande
+      view:
+        route-panel-title: Itinéraire
+        comments-title: Commentaires
+        notes-title: Notes
+        dispatch: Expédier
+        unassign-driver: Désassigner le conducteur
+        assign-driver: Assigner un conducteur
+        cancel-order: Annuler la commande
+        delete-order: Supprimer la commande
+        activity: Activité
+        unable-load-order-activity: Impossible de charger l'activité de la commande
+        ad-hoc: Ad-Hoc
+        customer: Client
+        facilitator: Facilitateur
+        driver-assigned: Conducteur assigné
+        change-driver: Changer de conducteur
+        tracking-number: Numéro de suivi
+        date-scheduled: Date prévue
+        date-dispatched: Date d'expédition
+        date-started: Date de début
+        order-details-title: Détails de la commande
+        route: Itinéraire
+        pickup: Enlèvement
+        dropoff: Livraison
+        return: Retour
+        order-summary: Résumé de la commande
+        subtotal: Sous-total
+        delivery-fee: Frais de livraison
+        tip: Pourboire
+        delivery-tip: Pourboire de livraison
+        total: Total
+        payload: Chargement
+        items-drop: Livraison des articles à
+        tracking: Suivi
+        view-activity: Voir l'activité
+        order-metadata: Métadonnées de la commande
+        unassign-title: Êtes-vous sûr de vouloir désassigner le conducteur ({driverName}) de cette commande ?
+        unassign-body: Une fois le conducteur désassigné, il n'aura plus accès aux détails de cette commande.
+        unassign-success: Le conducteur a été désassigné de cette commande.
+        route-error: L'optimisation de l'itinéraire a échoué, vérifiez l'entrée de l'itinéraire et réessayez.
+        invalid-warning: Entrée de statut personnalisé invalide.
+        change-order: Changer le conducteur de la commande
+        assign-order: Assigner un conducteur à la commande
+        assign-success: '{orderId} conducteur assigné mis à jour.'
+        order-title: Étiquette de la commande
+        waypoint-title: Étiquette du point de passage
+        proof-of-delivery: Preuve de livraison
+        notes-placeholder: Entrez des notes de commande ici....
+        save-order-note: Sauvegarder la note de commande
+        order-notes-updated: Notes de commande mises à jour.
+  products:
+    index:
+      manage-addons: Gérer les compléments
+      manage-addons-dialog:
+        manage-addons-title: Gérer les catégories d'addons de produits et les options
+        manage-addons-accept-button: Sauvegarder les changements
+      done: Terminé
+      create-new-product-category: Créer une nouvelle catégorie de produit
+      product-category-created-success: Nouvelle catégorie de produit créée.
+      import-products-via-spreadsheets: Importer des produits via des feuilles de calcul
+      start-upload: Commencer le téléchargement
+      warning-no-file-upload: Aucun fichier en file d'attente pour le téléchargement !
+      products-success-message: {resultsLength} produits importés avec succès...
+      delete-product: Êtes-vous sûr de vouloir supprimer ce produit ?
+      body-warning: Attention ! Une fois ce produit supprimé, il ne sera plus accessible.
+      aside-scroller:
+        title: Catégories de produits
+        custom-top-item-text: Tous les produits
+      import-products-success-message: {resultsLength} produits importés avec succès...
+      edit:
+        title: Le produit n'est pas enregistré !
+        body: Vous perdrez toutes les modifications non sauvegardées, êtes-vous sûr de vouloir annuler ?
+        changes-saved: Changements sauvegardés !
+      new:
+        new-product-created-success: Nouveau produit créé avec succès !
+        warning-only-select-an-image-file-to-be-primary: Vous pouvez seulement sélectionner un fichier image comme principal !
+        made-the-primary-success-image: >-
+          {fileName} a été défini comme image principale.
+        title: Le produit n'est pas enregistré !
+        body: Revenir en arrière annulera cette création de produit, si vous continuez, tous les champs de saisie seront effacés !
+        select-addon-categories: Sélectionner les catégories d'addons
+        add-new-product-variant: Ajouter une nouvelle variante de produit
+        edit-product-variant: Éditer la variante de produit
+        untitled-field: Champ sans titre
+      category:
+        category: catégorie
+        title: Le produit n'est pas enregistré !
+        body: Attention ! Supprimer cette catégorie supprimera également tous les produits répertoriés sous cette catégorie.
+        edit-category: Éditer la catégorie
+        save-changes: Sauvegarder les changements
+        category-changes-saved-success: Changements de la catégorie sauvegardés.
+        delete-product: Êtes-vous sûr de vouloir supprimer ce produit ?
+        body-warning: Attention ! Une fois ce produit supprimé, il ne sera plus accessible.
+  settings:
+    api:
+      api-settings: Paramètres API
+      access-key-for-storefront-api-integrations: Clé d'accès pour l'API Storefront & Intégrations.
+      store-key: Clé du magasin
+      store-key-help-text: Ceci est votre clé de magasin, utilisez-la pour activer les applications et les intégrations pour votre vitrine.
+    gateways:
+      geteway-settings: Paramètres de passerelle
+      add-or-manage-your-paymeny-gateway-settings-here: Ajoutez ou gérez ici vos paramètres de passerelle de paiement.
+      create-new-gateway: Créer une nouvelle passerelle
+      gateway-name: Nom de la passerelle
+      gateway-help-text: Donnez un nom à votre passerelle de paiement, cela sera seulement pertinent en interne
+      gateway-code: Code de la passerelle
+      gateway-code-help-text: Code identifiant utilisé pour identifier la passerelle au SDK
+      callback-url: URL de rappel
+      callback-url-help-text: URL de rappel si applicable
+      return-url: URL de retour
+      return-url-help-text: URL de retour si applicable
+      this-is-a-sandbox-gateway: Ceci est une passerelle sandbox
+      delete-payment-gateway: Supprimer la passerelle de paiement
+      create-new-payment-gateway: Créer une nouvelle passerelle de paiement
+      save-gateway: Sauvegarder la passerelle
+      edit-payment-gateway: Éditer la passerelle de paiement
+      save-changes: Sauvegarder les changements
+      title-remove: Êtes-vous sûr de vouloir retirer cette passerelle ?
+      application-website-utilizing-gateway: Toutes les applications et les sites web utilisant cette passerelle dans leur configuration pourraient être perturbés si la passerelle n'est pas remplacée au préalable
+    index:
+      general-settings-header: Paramètres généraux
+      general-settings-message: Fournissez les paramètres généraux pour votre vitrine.
+      name-placeholder: Nom de la vitrine
+      name-help-text: Le nom de votre magasin.
+      description-placeholder: Description de la vitrine
+      description-help-text: Donnez une brève description de votre magasin pour informer les utilisateurs de ce que vous vendez.
+      tags-placeholder: Ajouter des étiquettes
+      contact-social: Contact & Réseaux sociaux
+      website-help-text: L'URL de votre site web professionnel.
+      facebook-placeholder: ID Facebook
+      facebook-help-text: L'ID de votre page Facebook professionnelle.
+      instagram-placeholder: Nom d'utilisateur Instagram
+      instagram-help-text: Le nom d'utilisateur de votre Instagram professionnel.
+      twitter-placeholder: Nom d'utilisateur Twitter
+      twitter-help-text: Le nom d'utilisateur de votre Twitter professionnel.
+      logo-backdrop: Logo & Fond
+      logo-help-text: Logo de votre magasin.
+      upload-new-logo: Télécharger un nouveau logo
+      backdrop-help-text: Image de fond ou bannière optionnelle pour votre magasin.
+      upload-new-backdrop: Télécharger un nouveau fond
+      images-videos: Images & Vidéos
+      drop-to-upload: Déposer pour télécharger
+      ready-to-upload: prêt pour le téléchargement.
+      upload-image-video: Télécharger des images et vidéos
+      drag-and-drop-image: Glissez et déposez des fichiers d'images et de vidéos sur cette zone de dépôt
+      upload-queue: File d'attente de téléchargement
+      alerted-for-certain-event: Configurez qui doit être alerté pour certains événements.
+      new-order-alert: Alerte nouvelle commande
+      alert-placeholder: Sélectionnez les utilisateurs à alerter pour une nouvelle commande
+      enable-tax: Activer la taxe
+      tax-percentage: Pourcentage de taxe
+      tax-percentage-help-text: Le pourcentage de taxe sur les ventes à appliquer aux commandes.
+      auto-accept-incoming-order: Accepter automatiquement les commandes entrantes
+      auto-dispatch-order: Expédier automatiquement les commandes
+      require-proof-of-delivery: Exiger une preuve de livraison
+      proof-of-delivery-method: Méthode de preuve de livraison
+      enable-cash-on-delivery: Activer le paiement à la livraison
+      enable-order-pickup: Activer l'enlèvement de commande
+      enable-tip: Activer les pourboires
+      enable-integrated-vendors: Activer les fournisseurs intégrés
+      save-changes: Sauvegarder les changements
+    locations:
+      new-store-location: Nouvel emplacement de magasin
+      add-new-location: Ajouter un nouvel emplacement
+      edit-store-location: Éditer l'emplacement du magasin
+      save-changes: Sauvegarder les changements
+      remove-this-store-location: Êtes-vous sûr de vouloir retirer cet emplacement de magasin ?
+      solely-accosciated-location: Tous les produits qui sont uniquement associés à cet emplacement ne seront plus accessibles.
+      new-store-hour: Ajouter de nouvelles heures de magasin pour {day}
+      add-hours: Ajouter des heures
+      store-hour-added: Nouvelles heures de magasin ajoutées pour {day}
+      remove-these-hour: Êtes-vous sûr de vouloir retirer ces heures ?
+      update-schedule-location: En retirant ces heures d'opération, votre magasin peut devenir inactif selon l'horaire mis à jour pour cet emplacement.
+      location-setting: Paramètres d'emplacement
+      manage-store: Gérez les emplacements et les heures d'opération de vos magasins
+      text-location: Créer un nouvel emplacement
+      store-hour: Gérer les heures de magasin
+    notification:
+      create-new-notification-channel: Créer un nouveau canal de notification
+      create-notification-channel: Créer un canal de notification
+      edit-notification-channel: Éditer le canal de notification
+      save-changes: Sauvegarder les changements
+      new-notification-channel-added: Nouveau canal de notification ajouté
+      remove-this-notification-channel: Êtes-vous sûr de vouloir retirer ce canal de notification ?
+      application-websites-utillizing-channel: Toutes les applications et les sites web utilisant ce canal dans leur configuration pourraient être perturbés si le canal n'est pas remplacé au préalable
+      notification-settings: Paramètres de notification
+      notification-storefront: Configurez les canaux de notification pour votre vitrine, chaque canal de notification peut également avoir ses propres règles et options.
+      new-channel: Nouveau canal
+  service:
+    storefront:
+      new-incoming-order: Vous avez une nouvelle commande entrante !
+      accept-order: Accepter la commande
+      decline-order: Refuser la commande
+      create-first-storefront: Créez votre première vitrine
+      storefront-has-been-create-success: Votre nouvelle vitrine a été créée !
+      create-new-storefront: Créer une nouvelle vitrine
+      storefront-create-success: Votre nouvelle vitrine a été créée !
+  application:
+    launch-app: Lancer l'application
+fleet-ops:
+  extension-name: Gestion de flotte
+  common:
+    active-manpower: Main-d'œuvre active
+    address: Adresse
+    amount: Montant
+    assignee: Assigné
+    avatar: Avatar
+    building: Bâtiment
+    bulk-action: Action en masse
+    cancel: Annuler
+    category: Catégorie
+    city: Ville
+    coordinates: Coordonnées
+    cost: Coût
+    code: Code
+    country: Pays
+    config: Config
+    created-at: Créé le
+    date-created: Date de création
+    delete: Supprimer
+    destination: Destination
+    details: Détails
+    description: Description
+    distance: Distance
+    driver-license: Permis de conduire
+    driver: Conducteur
+    edit: Modifier
+    email: Courriel
+    export: Exporter
+    fleet: Flotte
+    height: Hauteur
+    host: Hôte
+    id: ID
+    internal-id: ID interne
+    item: Article
+    key: Clé
+    label: Étiquette
+    length: Longueur
+    license: Licence
+    loading: Chargement...
+    loading-resource: Chargement de {resourceName}...
+    make: Marque
+    manage-message: Gérez vos fournisseurs
+    manpower: Main-d'œuvre
+    model: Modèle
+    name: Nom
+    namespace: Espace de noms
+    neighborhood: Quartier
+    new: Nouveau
+    odometer: Odomètre
+    options: Options
+    orders: Commandes
+    parent-fleet: Flotte parente
+    phone: Téléphone
+    photos: photos
+    plate-number: Numéro de plaque
+    postal-code: Code postal
+    priority: Priorité
+    reload: Recharger
+    reload-data: Recharger les données
+    remove: Retirer
+    reporter: Rapporteur
+    sandbox: Bac à sable
+    save-changes: Sauvegarder les changements
+    schedule: Planifier
+    search: Recherche
+    security-access-code: Code d'accès sécurisé
+    service-area: Zone de service
+    service: Service
+    state: État
+    status: Statut
+    street-1: Rue 1
+    street-2: Rue 2
+    street: Rue
+    task: Tâche
+    title: Titre
+    type: Type
+    unit: Unité
+    updated-at: Mis à jour le
+    upload-new: Télécharger nouveau
+    uploading: Téléchargement...
+    value: Valeur
+    vehicle: Véhicule
+    vendor: Fournisseur
+    vin-number: Numéro VIN
+    volume: Volume
+    weight: Poids
+    website-url: URL du site web
+    website: Site web
+    width: Largeur
+    year: Année
+    zone: Zone
+    total: Total
+    back: Retour
+    done: Terminé
+  component:
+    activity-logic-builder:
+      activity-logic: Logique d'activité
+      activity-logic-help-text: Définissez des conditions logiques personnalisées qui déterminent quand une activité devient disponible dans le flux de travail. Cette fonctionnalité vous permet d'adapter le flux en fonction de critères spécifiques, en veillant à ce que chaque activité ne soit déclenchée que lorsque ses conditions prédéfinies sont remplies.
+      activity-logic-add-logic-help-text: Créez un nouvel ensemble de conditions qui définira quand une activité doit être activée. Cliquez ici pour commencer à élaborer une nouvelle règle logique.
+      activity-logic-select-logic-type-help-text: Choisissez le type de logique que cette condition suivra. Sélectionnez 'Si' pour une condition directe, 'Et'/'Ou' pour des conditions composées, ou 'Non' pour nier une condition.
+      activity-logic-add-condition-help-text: Ajoutez une exigence spécifique qui doit être satisfaite au sein de cet ensemble logique. Utilisez cela pour spécifier des critères supplémentaires qui contrôlent la disponibilité de l'activité.
+      field: Champ
+      value: Valeur
+      add-logic: Ajouter logique
+    activity-event-selector:
+      activity-events: Événements d'activité
+      activity-events-select-to-fire: Sélectionnez les événements qui seront activés lorsque cette activité se produira.
+      activity-events-select-events-info: Sélectionnez l'événement spécifique que vous souhaitez déclencher en réponse à cette activité.
+      select-event-to-add: Sélectionnez l'événement à ajouter...
+    custom-field-form-panel:
+      meta-col-span: 'Méta : Colonne-Portée'
+      col-span-size: Taille de la portée de la colonne
+      custom-field-title-concat: 'Champ personnalisé : '
+      new-custom-field: Nouveau champ personnalisé
+      close-new-custom-field: Annuler les modifications du champ personnalisé
+      save-custom-field: Sauvegarder les modifications
+      create-custom-field: Créer un nouveau champ
+      field-name: Nom du champ
+      field-label: Étiquette du champ
+      field-type: Type de champ
+      select-field-type: Sélectionnez le type de champ...
+      field-description: Description du champ
+      field-help-text: Aide pour le champ
+      field-default-value: Valeur par défaut du champ
+      field-is-required: Le champ est requis
+      field-is-editable: Le champ est modifiable
+      field-options: Options du champ
+      field-validation-rules: Règles de validation du champ
+      field-model-type: Type de modèle de champ
+      field-select-model-type: Sélectionnez le type de modèle
+      add-new-option: Ajouter une nouvelle option
+    activity-form-panel:
+      title-concat: 'Activité : '
+      new-activity-title: Créer une nouvelle activité
+      key: Clé
+      code: Code
+      status: Statut
+      details: Détails
+      proof-of-delivery: Preuve de livraison
+      require-pod: Nécessite une preuve de livraison
+      require-pod-help-text: Cette activité nécessite une preuve à créer avant qu'elle puisse être appliquée à la commande.
+      select-pod-method: Méthode de preuve de livraison
+      pod-method-placeholder: Sélectionnez la méthode de preuve de livraison
+      completes-order: Complète la commande
+      complete: Complet
+      key-help: "Entrez une clé utilisée pour la prise de décision programmatique. Cette clé peut représenter une ou plusieurs activités avec le même identifiant. Note : Cette clé n'est pas obligatoirement unique."
+      code-help: Entrez un identifiant unique spécifique à cette activité.
+      status-help: Spécifiez le statut affiché à l'utilisateur final lorsque cette activité est déclenchée.
+      details-help: Fournissez une description détaillée de l'activité pour la compréhension de l'utilisateur final.
+    custom-entity-issue-form-panel: 
+        new-custom-entity: Nouvelle entité personnalisée
+        name: Nom
+        description: Description
+        details: Détails
+        type: Type
+        length: Longueur
+        width: Largeur
+        height: Hauteur
+        weight: Poids
+        entity-image: Image de l'entité
+        measurements: Mesures
+    order-config-manager:
+      title: Configuration des commandes
+      message: Les configurations de commande vous permettent de définir des configurations dynamiques qui indiqueront à Fleetbase comment différents types de commandes doivent être exécutées.
+      configuration: Configuration
+      new-order-config: Nouvelle config de commande
+      select-order-config: Sélectionnez la config de commande
+      create-new-title: Créer une nouvelle configuration de commande
+      create-warning-message: La configuration de commande nécessite un nom
+      create-success-message: Nouvelle config de commande créée avec succès.
+      no-order-config-selected: Aucune configuration de commande sélectionnée.
+      saved-success-message: 'Configuration de {orderConfigName} enregistrée.'
+      cloned-success-message: Configuration de commande clonée avec succès.
+      enter-clone-name: Entrez le nom de la configuration clonée
+      no-config-name-warning-message: Aucun nom de configuration entré.
+      delete-warning-message: Une fois cette configuration de commande supprimée, vous ne pourrez plus créer de commandes l'utilisant. Êtes-vous sûr ?
+      uninstall-order-config: Désinstaller la configuration
+      uninstall-order-config-success-message: Extension {extensionName} désinstallée.
+      select-order-config-to-start: Sélectionnez ou créez une configuration de commande pour commencer.
+      details:
+        details: Détails
+        name: Nom
+        description: Description
+        tags: Tags
+        add-tags: Ajouter des tags
+        key: Clé
+        version: Version
+        namespace: Espace de noms
+        controls: Contrôles
+        delete-config: Supprimer la config
+        delete:
+          delete-title: Supprimer cette configuration de commande ?
+          delete-body-message: Une fois cette configuration de commande supprimée, elle ne sera pas récupérable et vous perdrez toutes les configurations.
+          confirm-delete: Supprimer
+      activity-flow:
+        save-activity-flow: Sauvegarder le flux d'activité
+        edit-activity-unique-code-warning: Le code d'activité doit être unique !
+      custom-fields:
+        new-field-group: Nouveau groupe de champs
+        new-custom-field: Créer un nouveau champ personnalisé
+        grid-size: Taille de la grille
+        delete-custom-field-prompt:
+          modal-title: Supprimer ce champ personnalisé ?
+          delete-body-message: Une fois ce champ personnalisé supprimé, il ne sera pas récupérable et vous perdrez toutes les configurations.
+          confirm-delete: Supprimer
+        delete-custom-field-group-prompt:
+          modal-title: Supprimer ce groupe de champs ?
+          delete-body-message: Une fois ce groupe de champs supprimé, il ne sera pas récupérable et vous perdrez tous les champs personnalisés à l'intérieur.
+          confirm-delete: Supprimer
+      entities: 
+        new-custom-entity: Nouvelle entité personnalisée
+        name: Nom
+        description: Description
+        type: Type
+        length: Longueur
+        width: Largeur
+        height: Hauteur
+        weight: Poids
+        delete-custom-entity-title: Supprimer cette entité personnalisée ?
+        delete-custom-entity-body: Une fois cette entité personnalisée supprimée, elle ne sera pas récupérable et vous perdrez toutes les configurations.
+        confirm-delete: Confirmer
+      types:
+        no-order-installed: Aucune configuration de commande installée !
+        you-have-no-configs: Vous n'avez actuellement aucune configuration de commande installée, consultez les extensions pour installer une configuration de commande pour commencer.
+        view-extensions: Voir les extensions
+    avatar-picker:
+      avatar: Avatar
+      select-map-avatar: Sélectionnez l'avatar de la carte
+      select-avatar-rendering: Sélectionnez un avatar à utiliser pour le rendu sur les cartes lors de l'utilisation des fonctionnalités de suivi géolocalisé.
+      select-avatar: Sélectionnez l'avatar
+    admin:
+      navigator-app:
+        title: Application Navigator
+        name: URL de liaison d'instance
+        message: Utilisez cette URL pour lier l'application officielle Navigator à cette instance {companyName}. Ouvrir cette URL sur un appareil mobile ouvrira l'application Navigator et mettra à jour sa configuration et son image de marque.
+        settings: Paramètres de l'entité
+        select-input: Permettre au conducteur de mettre à jour les détails de l'entité
+        driver-settings: Paramètres du conducteur
+        description: Activer le conducteur à bord
+        upload-document: Exiger que le conducteur télécharge des documents
+        upload-body: Ajouter des documents
+        document: Document
+      visibility-controls:
+        title: Contrôles de visibilité
+        message: Les contrôles de visibilité vous permettent de désactiver des sections de Fleet-Ops. Basculez la case à cocher pour activer ou désactiver des sections à masquer dans Fleet-ops.
+        checkbox-text: Activer ou désactiver la visibilité pour cette section dans Fleet-Ops.
+      avatar-management:
+        upload-avatar: Télécharger l'avatar
+        view-avatar: Voir l'avatar
+        vehicles : Véhicules
+        drivers : Conducteurs
+        places : Lieux
+    entity-field-editing-settings:
+      entitiy-field-editing-settings: Paramètres d'édition des champs d'entité
+      entity-field-editing-settings-help-text: Ces paramètres déterminent quels champs d'une entité sont modifiables par un conducteur via l'application Navigator
+      select-order-config: Sélectionner la configuration de commande
+      select-order-config-help-text: Sélectionnez une configuration de commande à laquelle ces paramètres s'appliqueront
+      enable-driver-to-edit-entity-fields: Permettre au conducteur de modifier les détails de l'entité
+      enable-driver-to-edit-entity-fields-help-text: Activer ce bascule accorde au conducteur la permission de modifier des champs d'entité spécifiques choisis ci-dessous.
+    driver-onboard-settings:
+      driver-onboard-settings: Paramètres d'intégration du conducteur
+      enable-driver-onboard-from-app: Activer l'intégration du conducteur depuis l'application Navigator
+      enable-driver-onboard-from-app-help-text: Activer ce paramètre permet aux conducteurs de s'intégrer indépendamment (créer leur propre compte) via l'application Navigator.
+      select-onboard-method: Sélectionnez la méthode d'intégration du conducteur
+      select-onboard-method-help-text: Ce paramètre détermine comment les conducteurs sont autorisés à créer leurs comptes via l'application Navigator. Choisissez 'Invitation' si les conducteurs doivent recevoir une invitation par courriel pour créer leur compte. Sélectionnez 'Bouton' si vous souhaitez activer un bouton dans l'application qui permet à quiconque de créer un compte de conducteur.
+      require-driver-to-upload-onboard-documents: Exiger que le conducteur télécharge des documents d'intégration
+      require-driver-to-upload-onboard-documents-help-text: Ce paramètre impose les documents qu'un conducteur doit fournir avant que son compte puisse être créé.
+      required-onboard-documents: Documents d'intégration requis
+      required-onboard-documents-help-text: Entrez tous les documents d'intégration requis pour un conducteur à fournir ci-dessous en utilisant le bouton "Ajouter un document d'intégration".
+      enter-document-name: Entrez le nom du document
+      add-onboard-document: Ajouter un document d'intégration
+    cell:
+      driver-name:
+        not-assigned: Aucun conducteur assigné
+    fleet-panel:
+      details:
+        active-manpower: Main-d'œuvre active
+      driver-listing:
+        search-driver: Rechercher des conducteurs dans la flotte
+        add-driver: Ajouter un conducteur à la flotte
+        loading-driver: Chargement des conducteurs de la flotte...
+      vehicle-listing:
+        search-vehicle: Rechercher un véhicule dans la flotte
+        add-vehicle: Ajouter un véhicule à la flotte
+        loading-vehicle: Chargement des véhicules de la flotte...
+    layout:
+      fleet-ops-sidebar:
+        navigator-app: Application Navigator
+        resources: Ressources
+        operations: Opérations
+        dashboard: Tableau de bord
+        service-rates: Tarifs de service
+        scheduler: Planificateur
+        drivers: Conducteurs
+        vehicles: Véhicules
+        fleets: Flottes
+        vendors: Fournisseurs
+        contacts: Contacts
+        places: Lieux
+        fuel-reports: Rapports de carburant
+        issues: Problèmes
+        title: Créer une nouvelle commande
+        settings: Paramètres
+        order-config: Config de commande
+    live-map-drawer:
+      driver-listing:
+        location: Emplacement
+        current-job: Emploi actuel
+        last-seen: Dernière vue
+        view-driver: Voir les détails du conducteur...
+        edit-driver: Modifier le conducteur...
+        locate-driver: Localiser le conducteur...
+        delete-driver: Supprimer le conducteur...
+        warning-message: Impossible de localiser le conducteur.
+        message: Filtrer les conducteurs par mot-clé...
+      place-listing:
+        location: Emplacement
+        place: Lieu
+        view-place: Voir les détails du lieu...
+        edit-place: Modifier le lieu...
+        locate-place: Localiser le lieu...
+        delete-place: Supprimer le lieu...
+        warning-message: Impossible de localiser le lieu.
+        message: Filtrer les lieux par mot-clé...
+      vehicle-listing:
+        location: Emplacement
+        last-seen: Dernière vue
+        view-vehicle: Voir les détails du véhicule...
+        edit-vehicle: Modifier le véhicule...
+        locate-vehicle: Localiser le véhicule...
+        delete-vehicle: Supprimer le véhicule...
+        warning-message: Impossible de localiser le véhicule.
+        message: Filtrer les véhicules par mot-clé...
+    map-container:
+      visibility-control-panel:
+        title: Contrôles de visibilité
+        hide-places: Masquer tous les lieux...
+        show-places: Afficher tous les lieux...
+        vehicles: Véhicules
+        vehicle-controls: Contrôles de visibilité des véhicules...
+        hide-vehicles: Masquer tous les véhicules...
+        show-vehicles: Afficher tous les véhicules...
+        online-vehicles: Afficher uniquement les véhicules en ligne...
+        offline-vehicles: Afficher uniquement les véhicules hors ligne...
+      zones-panel:
+        title: Zones de service
+        create-service: Créer une nouvelle zone de service...
+        show: Afficher toutes les zones de service
+        hide: Masquer toutes les zones de service
+        action: Actions...
+        focus: Focus
+        blur: Flouter la zone de service...
+        create-zone: Créer une zone à l'intérieur...
+      toolbar:
+        create: Créer une commande
+        view-order: Voir les commandes
+        view-service-area: Voir les zones de service
+        visibility: Contrôles de visibilité
+        scope: Portée
+    modals:
+      new-custom-field-group:
+        modal-title: Créer un nouveau groupe de champs personnalisés
+        group-name: Nom du groupe
+      assign-driver:
+        select-driver: Sélectionner le conducteur
+        select-assign: Sélectionner le conducteur à assigner
+      clone-config-form:
+        name: Nom de la configuration
+        description: Description de la configuration
+      driver-assign-order:
+        order: Sélectionner la commande
+        assign-order: Sélectionner la commande à assigner
+      driver-assign-vehicle:
+        vehicle: Sélectionner le véhicule
+        assign-vehicle: Sélectionner le véhicule à assigner
+      driver-assign-vendor:
+        vendor: Sélectionner le fournisseur
+      driver-details:
+        job: Emploi actuel
+        view: Voir sur la carte
+      driver-form:
+        select-vendor: Sélectionner le fournisseur
+        select-vehicle: Sélectionner le véhicule
+      edit-meta-form:
+        add: Ajouter un champ méta
+      entity-form:
+        name-text: Nom de l'article ou de l'entité.
+        id-text: Utilisez ce champ pour définir éventuellement un identifiant personnalisé ou un identifiant interne pour l'entité.
+        sku: SKU
+        sku-text: Numéro d'unité de gestion des stocks, le cas échéant.
+        description: Description
+        description-text: Texte de description supplémentaire de l'entité.
+        price-title: Tarification & Valeur
+        price: Prix
+        price-text: Prix de l'entité.
+        sale-price: Prix de vente
+        sale-price-text: Prix de vente ou prix réduit de l'entité.
+        declare: Valeur déclarée
+        declare-text: Valeur déclarée de l'entité, utile si assurable.
+        measurement-title: Mesures & Poids
+        length: Longueur
+        length-text: La longueur de l'entité.
+        width: Largeur
+        width-text: La largeur de l'entité.
+        height: Hauteur
+        height-text: La hauteur de l'entité.
+        weight: Poids
+        weight-text: Le poids de l'entité.
+      entity-meta-field-prompt:
+        name: Clé du champ méta
+      fleet-form:
+        title: Nom de la flotte
+        assign: Assigner à une zone de service
+        assign-text: Sélectionnez la zone de service pour assigner la flotte
+        zone: Assigner à une zone
+        zone-text: Sélectionnez la zone pour assigner la flotte
+        task: Tâche/ Mission
+        task-text: Donnez une description de la tâche principale de cette flotte, le cas échéant.
+        select-task: Sélectionner la tâche
+        status-text: Sélectionnez le statut de la flotte.
+        select-status: Sélectionner le statut
+      fuel-report-details:
+        fuel: Carburant/ Volume
+      fuel-report-form:
+        select-driver: Sélectionner le conducteur
+        select-vehicle: Sélectionner le véhicule
+        volume: Volume
+        volume-text: Sélectionnez l'unité de mesure et le volume de carburant à signaler.
+      group-details:
+        name: Nom du groupe
+        member: Membres
+        address: Adresse
+      group-form:
+        title: Nom du groupe
+        users-add: Sélectionner les utilisateurs à ajouter au groupe
+        search: Recherchez et sélectionnez les utilisateurs à ajouter à ce groupe.
+        select-user: Sélectionner l'utilisateur à ajouter au groupe
+        no-users: Aucun utilisateur ajouté au groupe
+      install-prompt:
+        message: Vous êtes sur le point d'installer l'extension {extensionName}. Êtes-vous sûr de vouloir procéder à cette installation ?
+        sub-message: Certaines extensions nécessitent un accès à vos ressources.
+      issue-details:
+        assigned: Assigné à
+        type: Type de problème
+        category: Catégorie de problème
+      issue-form:
+        reported: Signalé par
+        select-reporter: Sélectionner le rapporteur
+        assigned: Assigné à
+        select-assignee: Sélectionner l'assigné
+        select-driver: Sélectionner le conducteur
+        select-vehicle: Sélectionner le véhicule
+        select-type: Sélectionner le type
+        select-category: Sélectionner la catégorie
+        type: Type de problème
+        type-text: Sélectionner le type de problème
+        category: Catégorie de problème
+        category-text: Sélectionner la catégorie de problème
+        report: Rapport de problème
+        tags: Tags de problème
+        add-tags: Ajouter des tags
+        select-status: Sélectionner le statut du problème
+      map-layer-form:
+        layer-type: Type de couche
+        layer-type-text: Sélectionnez le type de couche que vous souhaitez créer.
+        select-layer-type: Sélectionner le type de couche...
+        service-area: Zone de service
+        service-area-text: Sélectionnez la zone de service à laquelle attribuer cette zone.
+        select-service-area: Sélectionner la zone de service pour assigner la flotte
+        set-name: Définir un nom d'affichage pour les {options}.
+        service-type: Type de zone de service
+        service-type-text: Sélectionnez la définition du type pour cette zone de service.
+        select-service-type: Sélectionner le type de zone de service...
+        customize-border: Personnaliser la couleur de la bordure pour ces {options}.
+        customize-fill-color: Personnaliser la couleur de remplissage pour ces {options}.
+        service-area-country: Pays de la zone de service
+        service-area-country-text: Définissez éventuellement le pays dans lequel cette zone de service est située ou basée.
+      new-order-config:
+        name: Nom de la configuration
+        description: Description de la configuration
+        tags: Tags de la configuration
+        add-tags: Ajouter des tags
+      order-assign-driver:
+        select-driver: Sélectionner le conducteur
+        select-assign: Sélectionner le conducteur à assigner
+      order-config-new-status:
+        new-status: Nouveau statut
+        status-text: Entrez un nouveau statut d'activité à ajouter au flux
+      order-event:
+        schedule: Planifier
+        unschedule: Déplanifier
+      order-form:
+        id-text: Utilisez ce champ pour définir éventuellement un identifiant personnalisé ou un identifiant interne pour la commande.
+        schedule-text: La date et l'heure à laquelle la commande sera expédiée. Si aucun conducteur n'est assigné au moment de l'expédition, l'expédition échouera. Si la commande est ad hoc, la commande sera signalée aux conducteurs à proximité du lieu de collecte.
+        customer: Client
+        customer-text: Assignez éventuellement le client de cette commande. S'il s'agit d'un nouveau client, utilisez le bouton 'Nouveau client' ci-dessus.
+        select-customer: Sélectionner le client
+        facilitator: Facilitateur
+        facilitator-text: Assignez éventuellement un facilitateur pour cette commande, un facilitateur peut être un sous-traitant tiers ou un service qui facilitera le transport de cette commande.
+        select-facilitator: Sélectionner le facilitateur
+        assign-driver: Assigner le conducteur
+        assign-driver-text: Assignez le conducteur à qui cette commande sera expédiée.
+        select-driver: Sélectionner le conducteur
+      order-import:
+        loading-message: Traitement de l'importation...
+        drop-upload: Déposez pour télécharger
+        invalid: Invalide
+        ready-upload: prêt pour le téléchargement.
+        upload-spreadsheets: Télécharger des feuilles de calcul
+        drag-drop: Glissez-déposez des fichiers de feuille de calcul sur cette zone de dépôt
+        button-text: ou sélectionnez des feuilles de calcul à télécharger
+        spreadsheets: feuilles de calcul
+        upload-queue: File d'attente de téléchargement
+      order-label:
+        loading: Chargement de l'étiquette...
+      order-new-activity:
+        select-message: Sélectionnez un statut d'activité pour mettre à jour l'activité de suivi de la commande, ou entrez une activité personnalisée.
+        order-currently-message: Cette commande est actuellement {options}, toute activité supplémentaire écrasera ce statut.
+        not-recommend-message: Fleetbase ne recommande pas cela à moins que vous ne sachiez exactement ce que vous faites.
+        activity-options: Options d'activité
+        activity: activité
+        dispatch: Cela déclenchera l'expédition de la commande.
+        status: Statut d'activité personnalisé
+        details: Détails d'activité personnalisés
+        code: Code d'activité personnalisé
+        fleetbase-message: Fleetbase ne recommande pas cela à moins que vous ne sachiez exactement ce que vous faites.
+      order-route-form:
+        toggle: Basculer plusieurs points de dépose
+        optimize: Optimiser l'itinéraire
+        optimize-text: Fleetbase optimisera automatiquement l'itinéraire.
+        add: Ajouter un point de passage
+        add-text: Utilisez le bouton `Ajouter un point de passage` pour ajouter plus d'arrêts à cette commande. Le moteur de routage de Fleetbase optimisera automatiquement l'itinéraire à mesure que chaque arrêt est ajouté ou supprimé.
+        select-waypoint: Sélectionner le point de passage
+        pickup: Collecte
+        edit-address: Modifier l'adresse
+        select-pickup: Sélectionner la collecte
+        invalid: Coordonnées invalides!
+        dropoff: Dépose
+        select-dropoff: Sélectionner la dépose
+        return: Retour
+        select-return: Sélectionner le retour
+      place-assign-vendor:
+        select-vendor: Sélectionner le fournisseur
+      place-details:
+        view: Voir sur la carte
+      policy-form:
+        name: Nom de la politique
+        name-text: Entrez un nom pour votre politique
+        description: Description de la politique
+        description-text: Entrez une description pour votre politique
+        permissions: Sélectionner les autorisations
+      role-form:
+        name: Nom du rôle
+        name-text: Entrez un nom pour ce rôle
+        permissions: Sélectionner les autorisations
+      select-payment-method:
+        card-ending: Carte se terminant par {method}
+      service-area-form:
+        name: Nom de la zone de service
+        name-text: Définissez un nom d'affichage pour la zone de service.
+        type: Type de zone de service
+        type-text: Sélectionnez la définition du type pour cette zone de service.
+        select-type: Sélectionner le type de zone de service...
+        border-color: Couleur de la bordure de la zone de service
+        customize-border-color: Personnalisez la couleur de la bordure pour cette zone de service.
+        area-color: Couleur de la zone de service
+        customize-area-color: Personnalisez la couleur de remplissage pour cette zone de service.
+        country: Pays de la zone de service
+        country-text: Définissez éventuellement le pays dans lequel cette zone de service est située ou basée.
+      set-password:
+        message: Bienvenue chez Fleetbase ! Avant de commencer, définissez un nouveau mot de passe pour continuer ci-dessous.
+        new-password: Nouveau mot de passe
+        confirm-password: Confirmer le mot de passe
+        help-text: Entrez un mot de passe d'au moins 8 caractères pour continuer.
+      uninstall-prompt:
+        message: Vous êtes sur le point de désinstaller l'extension "{options}". Êtes-vous sûr de vouloir procéder à cette désinstallation ?
+        sub-message: Toutes les configurations et personnalisations seront perdues.
+      vehicle-details:
+        make: Marque
+        model: Modèle
+        year: Année
+        driver-assigned: Conducteur assigné
+        no-driver-assigned: Aucun conducteur assigné
+        avatar: Avatar
+        model-information: Informations sur le modèle
+        acceleration: 0 à 100 km/h
+        body: Carrosserie
+        doors: Portes
+        length: Longueur (mm)
+        seats: Sièges
+        top-speed: Vitesse maximale (km/h)
+        transmission: Type de transmission
+        weight: Poids (kg)
+        wheelbase: Empattement (mm)
+        width: Largeur (mm)
+        engine-information: Informations sur le moteur
+        engine-bore: Alésage du moteur (mm)
+        cc: Cylindrée
+        compression: Compression
+        cylinder: Cylindres
+        position: Position
+        power-ps: Puissance (ps)
+        power-rpm: Puissance (tr/min)
+        stroke: Course (mm)
+        torque-nm: Couple (nm)
+        torque-rpm: Couple (tr/min)
+        valves: Soupapes par cylindre
+        fuel-information: Informations sur le carburant
+        fuel: Carburant
+        fuel-cap: Capacité du réservoir (l)
+        liters-city: Litres par km en ville
+        liters-highway: Litres par km sur autoroute
+        liters-mixed: Litres par km mixte
+      vehicle-form:
+        map-avatar: Sélectionnez l'avatar de la carte
+        map-avatar-text: Sélectionnez un avatar à utiliser pour le rendu sur les cartes lors de l'utilisation des fonctionnalités de suivi géolocalisé.
+        select-avatar: Sélectionnez l'avatar
+        make: Marque du véhicule
+        model: Modèle du véhicule
+        year: Année du véhicule
+        select-driver: Sélectionner le conducteur
+        body: Type de carrosserie du véhicule
+        doors: Nombre de portes
+        type: Type de propulsion du véhicule
+        length: Longueur du véhicule (mm)
+        seats: Nombre de sièges
+        top-speed: Vitesse maximale du véhicule (km/h)
+        transmission: Type de transmission du véhicule
+        weight: Poids du véhicule (kg)
+        wheelbase: Empattement du véhicule (mm)
+        width: Largeur du véhicule (mm)
+        engine-bore: Alésage du moteur (mm)
+        cc: Cylindrée
+        compression: Compression du moteur
+        cylinder: Cylindres du moteur
+        position: Position du moteur
+        power-ps: Puissance du moteur (ps)
+        power-rpm: Puissance du moteur (tr/min)
+        stroke: Longueur de la course (mm)
+        torque-nm: Couple du moteur (nm)
+        torque-rpm: Couple du moteur (tr/min)
+        fuel-type: Type de carburant
+        fuel-cap: Capacité du réservoir de carburant (L)
+      vendor-details:
+        sandbox: Bac à sable
+        host: Hôte
+        namespace: Espace de noms
+      vendor-form:
+        choose-vendor: Choisissez un fournisseur intégré
+        create-vendor: Créer un fournisseur personnalisé
+        credentials: Identifiants
+        options: Options
+        hide-advanced: Masquer avancé
+        show-advanced: Afficher avancé
+        custom-host: Hôte personnalisé
+        host-text: Fournissez éventuellement un hôte personnalisé qui devrait être utilisé pour cette intégration.
+        custom-namespace: Espace de noms personnalisé
+        namespace-text: Fournissez éventuellement un espace de noms personnalisé ou une version d'API qui devrait être utilisée pour l'intégration.
+        webhook: URL du webhook
+        webhook-text: Les fournisseurs intégrés nécessiteront généralement cela afin que Fleetbase puisse recevoir des mises à jour d'activité sur la commande. Ne changez pas à moins que vous ne sachiez ce que vous faites ! Modifier cela pourrait interrompre vos mises à jour de commande !
+        cancel-credentials: Annuler la réinitialisation des identifiants
+        reset-message: Les identifiants sensibles ne peuvent être réinitialisés que pour mettre à jour les identifiants, vous devez les saisir à nouveau.
+        optionally: Fournissez éventuellement votre propre
+        configure-vendor: pour configurer ce fournisseur.
+        select: Sélectionner
+        sandbox: Bac à sable
+        name-text: Le nom du fournisseur, généralement le nom d'une entreprise.
+        email-text: L'email du fournisseur, cela peut être utilisé pour déclencher des emails au fournisseur.
+        phone-text: Le numéro de téléphone du fournisseur, cela peut être utilisé pour déclencher des SMS ou des messages au fournisseur.
+        website-text: Le site web du fournisseur, ajoutez éventuellement le site web du fournisseur pour référence.
+      zone-form:
+        name: Nom de la zone
+        name-text: Définissez un nom d'affichage pour la zone.
+        border-color: Couleur de la bordure de la zone
+        customize-border: Personnalisez la couleur de la bordure pour cette zone.
+        zone-color: Couleur de la zone
+        customize-fill-color: Personnalisez la couleur de remplissage pour cette zone.
+        optionally: Donnez éventuellement une description à la zone.
+        description-zone: Description de la zone
+    order:
+      header:
+        dispatched-order: Expédiée à {order}
+        dispatched: Expédiée
+        dispatched-at: Expédiée à
+        edit: Modifier les détails
+        update: Mettre à jour l'activité
+        assign: Assigner le conducteur
+        get-order: Obtenir l'étiquette de la commande
+        split-order: Diviser la commande
+        reschedule: Replanifier la commande
+        cancel-order: Annuler la commande
+      place-card:
+        show-less: Afficher moins de détails
+        show-more: Afficher plus de détails
+      schedule-card:
+        destination: Destination
+        unassign-driver: Désassigner le conducteur ?
+        unassign-text: Vous êtes sur le point de désassigner le conducteur pour la commande {orderId}. Cliquez sur continuer pour confirmer la suppression du conducteur.
+        unassign-button: Continuer et désassigner le conducteur
+        assign-driver: Assigner un nouveau conducteur ?
+        assign-text: Vous êtes sur le point d'assigner un nouveau conducteur ({driverName}) à la commande {orderId}. Cliquez sur continuer pour confirmer le conducteur.
+        assign-button: Continuer et assigner le conducteur
+        date: Date prévue
+        driver-assigned: Conducteur
+        no-driver: Aucun conducteur
+        select-driver: Sélectionner le conducteur
+        vehicle-assigned: Véhicule
+        no-vehicle: Aucun véhicule
+    widget:
+      fleet-ops-quickstart:
+        message: Voyons ce que vous pouvez faire pour démarrer les opérations...
+        start-task: Commencer la tâche
+      key-metrics:
+        title: Métriques de Fleet-Ops
+        earnings: Revenus
+        fuel-expenses: Dépenses en carburant
+        traveled: Distance parcourue
+        total-time: Temps total
+        order-scheduled: Commandes planifiées
+        order-completed: Commandes complétées
+        order-progress: Commandes en cours
+        order-canceled: Commandes annulées
+        driver-online: Conducteurs en ligne
+        customers: Clients
+        open-issue: Problème ouvert
+        closed-issues: Problèmes fermés
+      live-order-map:
+        loading: Chargement des commandes en cours...
+        assigned: Conducteur assigné
+        no-order: Aucune commande en cours
+        message: Lorsque des commandes sont en cours, elles s'afficheront dans ce widget et montreront l'activité en temps réel.
+      recent-orders:
+        title: Commandes récentes
+        loading: Chargement des commandes récentes...
+        no-orders: Aucune commande pour cette semaine
+        message-part-1: Il n'y a pas eu de commandes cette semaine, lancez le mouvement en
+        message-part-2: créant une nouvelle commande
+        message-part-3: ou permettez à vos clients de soumettre des commandes via l'API.
+      transactions:
+        title: Transactions récentes
+        loading: Chargement des transactions récentes...
+        no-transactions: Aucune transaction cette semaine
+        message: Lorsque des commandes sont exécutées avec des tarifs de service, Fleetbase suit automatiquement les transactions.
+    contact-form-panel:
+      success-message: contact {contactName} enregistré avec succès.
+      view-contact-button: Voir les détails du contact
+      save-contact: Sauvegarder le contact
+      create-contact: Créer un contact
+      cancel-edit-button: Annuler la modification du contact
+      cancel-new-button: Annuler le nouveau contact
+      new-contact: Nouveau contact
+    contact-panel:
+      details:
+        web-url: URL du site web
+      edit-button: Modifier le contact
+      cancel-edit-button: Annuler la modification du contact
+      cancel-new-button: Annuler le nouveau contact
+    display-panel:
+      no-address: Aucune adresse {type} !
+      no-address-message: Aucune adresse !
+    driver-card:
+      no-fleets: Aucune flotte
+    driver-form-panel:
+        success-message: Conducteur ({driverName}) enregistré avec succès.
+        driver-detail: Voir les détails du conducteur
+        save-driver: Sauvegarder le conducteur
+        create-driver: Créer un conducteur
+        cancel-edit-driver: Annuler la modification du conducteur
+        cancel-new-driver: Annuler le nouveau conducteur
+        upload-new-photo: Télécharger une nouvelle photo
+        new-driver: Nouveau conducteur
+        vendor: Fournisseur
+        select-vehicle: Sélectionner le véhicule
+        driver-status: Sélectionner le statut du conducteur
+    driver-panel:
+      locate-button-text: Localiser le conducteur
+      edit-button-text: Modifier le conducteur
+      close-button-text: Fermer les détails du conducteur
+      no-vehicle-message: Aucun véhicule assigné
+      assign-vehicle-button: Assigner un véhicule au conducteur
+    fleet-driver-listing:
+      search-driver: Rechercher des conducteurs dans la flotte
+      add-driver: Ajouter un conducteur à la flotte
+      loading-message: Chargement des conducteurs de la flotte...
+    fleet-form-panel:
+      success-message: Flotte ({fleetName}) enregistrée avec succès.
+      title: Nouvelle flotte
+      save-fleet: Sauvegarder la flotte
+      create-fleet: Créer une flotte
+      view-details: Voir les détails de la flotte
+      cancel-edit-fleet: Annuler la modification de la flotte
+      cancel-new-fleet: Annuler la nouvelle flotte
+      fleet-name: Nom de la flotte
+      parent-fleet: Flotte parente
+      select-parent-fleet: Sélectionner la flotte parente pour assigner la flotte
+      select-vendor: Sélectionner le fournisseur pour assigner la flotte
+      service-title: Assigner à une zone de service
+      select-service: Sélectionner la zone de service pour assigner la flotte
+      zone-title: Assigner à une zone
+      select-zone: Sélectionner la zone pour assigner la flotte
+      select-status-fleet: Sélectionner le statut de la flotte.
+      select-status: Sélectionner le statut
+      task-mission-title: Tâche/ Mission
+      task-text: Donnez une description de la tâche principale de cette flotte, le cas échéant.
+    fleet-vehicle-listing:
+      search-vehicle: Rechercher un véhicule dans la flotte
+      add-vehicle: Ajouter un véhicule à la flotte
+      loading-message: Chargement des véhicules de la flotte...
+    fuel-report-form-panel:
+      success-message: Rapport de carburant enregistré avec succès.
+      fuel-report: Nouveau rapport de carburant
+      save-fuel-report: Sauvegarder le rapport de carburant
+      create-fuel-report: Créer un rapport de carburant
+      view-details: Voir les détails du rapport de carburant
+      cancel-edit-fuel-report: Annuler la modification du rapport de carburant
+      cancel-new-fuel-report: Annuler le nouveau rapport de carburant
+      select-reporter: Sélectionner le rapporteur
+      select-driver: Sélectionner le conducteur
+      select-vehicle: Sélectionner le véhicule
+      select-fuel-report: Sélectionner le statut du rapport de carburant
+      odometer: Odomètre
+      cost: Coût
+      volume: Volume
+      select-volume-text: Sélectionnez l'unité de mesure et le volume de carburant à signaler.
+    fuel-report-panel:
+      title: Détails du rapport de carburant
+      edit-button: Modifier le rapport de carburant
+      cancel-edit-fuel-report: Annuler la modification du rapport de carburant
+      cancel-new-fuel-report: Annuler le nouveau rapport de carburant
+      details: 
+        fuel: Carburant/ Volume
+    global-search:
+      search: Recherche par mot-clé...
+    integrated-order-details:
+      order-id: ID de la commande
+      quotation-id: ID de la cotation
+      driver-id: ID du conducteur
+      link: Lien partageable
+      price-breakdown: Détail des prix
+      metadata: Métadonnées
+    issue-form-panel:
+      success-message: Problème ({publicId}) enregistré avec succès.
+      issue: Nouveau problème
+      save-issue: Sauvegarder le problème
+      create-issue: Créer un problème
+      view-details: Voir les détails du problème
+      cancel-edit-issue: Annuler la modification du problème
+      cancel-new-issue: Annuler le nouveau problème
+      reported-by: Signalé par
+      assigned: Assigné à
+      select-assign: Sélectionner l'assigné
+      select-reporter: Sélectionner le rapporteur
+      select-driver: Sélectionner le conducteur
+      select-vehicle: Sélectionner le véhicule
+      type: Type de problème
+      select-type: Sélectionner le type de problème
+      category: Catégorie de problème
+      select-category: Sélectionner la catégorie de problème
+      report: Rapport de problème
+      tags: Tags de problème
+      add-tags: Ajouter des tags
+      priority: Priorité du problème
+      select-priority: Sélectionner la priorité du problème
+      select-status: Sélectionner le statut du problème
+    issue-panel:
+      details:
+        assigned: Assigné à
+        type: Type de problème
+        category: Catégorie de problème
+        priority: Priorité du problème
+        report: Rapport
+      title: Détails du problème
+      edit-issue: Modifier le problème
+      cancel-edit-issue: Annuler la modification du problème
+      cancel-new-issue: Annuler le nouveau problème
+    live-map:
+      onText: Masquer les contrôles de dessin...
+      offText: Activer les contrôles de dessin...
+      show-coordinates: Afficher les coordonnées...
+      center-map: Centrer la carte ici...
+      zoom-in: Zoomer...
+      zoom-out: Dézoomer...
+      hide-draw: Masquer les contrôles de dessin...
+      enable-draw: Activer les contrôles de dessin...
+      create-new-service: Créer une nouvelle zone de service...
+      focus-service: 'Focus sur la zone de service : {serviceName}'
+      view-driver: 'Voir le conducteur : {driverName}'
+      edit-driver: 'Modifier le conducteur : {driverName}'
+      delete-driver: 'Supprimer le conducteur : {driverName}'
+      view-vehicle-for: 'Voir le véhicule pour : {driverName}'
+      view-vehicle: 'Voir le véhicule : {vehicleName}'
+      edit-vehicle: 'Modifier le véhicule : {vehicleName}'
+      delete-vehicle: 'Supprimer le véhicule : {vehicleName}'
+      edit-zone: 'Modifier la zone : {zoneName}'
+      delete-zone: 'Supprimer la zone : {zoneName}'
+      assign-zone: 'Assigner la flotte à la zone : {zoneName}'
+      blur-service: 'Flouter la zone de service : {serviceName}'
+      create-zone: 'Créer une zone à l'intérieur : {serviceName}'
+      assign-fleet: 'Assigner la flotte à la zone de service : {serviceName}'
+      edit-service: 'Modifier la zone de service : {serviceName}'
+      delete-service: 'Supprimer la zone de service : {serviceName}'
+      service-area: Zone de service
+      zone: Zone
+    order-config:
+      create-new-title: Créer une nouvelle configuration de commande
+      warning-message: La configuration de commande nécessite un nom
+      success-message: Nouvelle configuration de commande créée avec succès.
+      no-order-warning: Aucune configuration de commande sélectionnée.
+      saved-success: 'Configuration de la commande {orderName} enregistrée.'
+      enter-name-title: Entrez le nom de la configuration clonée
+      no-config-warning: Aucun nom de configuration entré.
+      cloned-success: Configuration de commande clonée avec succès.
+      body: Une fois cette configuration de commande supprimée, vous ne pourrez plus créer de commandes en l'utilisant. Êtes-vous sûr ?
+      uninstall-title: Désinstaller la configuration
+      uninstall-success: Extension {extensionName} désinstallée.
+      activity-flow-editor:
+        add-status: Ajouter un nouveau statut au flux
+        no-status: Aucun statut entré.
+        overwrite: Cela écrasera un statut existant !
+        overwrite-text: Il existe déjà un autre statut {statusName} dans ce flux, si vous continuez, ce statut sera écrasé. Souhaitez-vous écraser le statut {statusName} précédent ?
+        overwrite-button: Oui, écraser !
+        remove: Supprimer le statut
+        remove-text: Êtes-vous sûr de vouloir supprimer ce statut ? Toutes les activités et logiques associées seront également supprimées.
+        delete-button: Oui, supprimer
+        unable-warning: Le statut {status} doit être dans cet ordre de séquence, impossible de le déplacer.
+        order-warning: Le statut créé doit toujours être le premier dans la séquence d'un flux de commande.
+        title: Flux d'activité
+        message: La configuration du flux d'activité vous permettra de définir les différents types de statuts d'activité de suivi qui s'appliquent à ce type de commande. La logique du flux d'activité peut également être configurée.
+        order-flow: Flux de commande
+        waypoint-flow: Flux de point de passage
+        new-activity: Nouvelle activité
+        activity-details: Détails de l'activité
+        logic-stack: Pile logique
+        add-logic: Ajouter une condition logique
+        select-field: Sélectionner le champ
+        select-operator: Sélectionner l'opérateur
+        enter-value: Entrez la valeur à comparer
+        no-logic: Aucune condition logique appliquée
+      details-editor:
+        success: Installé
+        key-text: Passez cette clé dans votre type de commande pour configurer la commande en utilisant cette config.
+        namespace-text: Espace de noms unique pour cette extension.
+        id: ID de l'extension
+        id-text: ID unique pour cette extension.
+        version: Version de l'extension
+        version-text: Version de cette extension.
+        clone: Cloner la configuration
+        uninstall: Désinstaller la configuration
+        delete: Supprimer la configuration
+      entities-editor:
+        warning-message: Aucun nom de clé de champ méta entré.
+        title: Entités
+        message: La configuration des entités vous permettra de définir les différents types d'entités qui devraient être sélectionnables pour ce type de commande. Celles-ci devraient être utilisées comme des modèles pour rendre la création manuelle de commandes plus rapide.
+        type: Type d'entité
+        add-meta: Ajouter un champ méta
+      fields-editor:
+        text-field: Champ de texte
+        boolean: Booléen
+        boolean-text: Permet à l'utilisateur de basculer une propriété vraie ou fausse par case à cocher
+        dropdown: Sélecteur déroulant
+        dropdown-text: Permet à l'utilisateur de sélectionner une option dans une liste déroulante
+        datetime: Sélecteur de date et heure
+        datetime-text: Permet à l'utilisateur de sélectionner une date et une heure
+        port: Sélecteur de port
+        port-text: Permet à l'utilisateur de sélectionner un port
+        vessel: Sélecteur de navire
+        vessel-text: Permet à l'utilisateur de sélectionner un navire
+        warning-message: Aucun nom de groupe entré.
+        field-title: Champs méta
+        new-field: Nouveau champ personnalisé
+        new-custom-field: Nouveau groupe de champs personnalisés
+        field-text: La configuration des champs méta vous permettra de définir des champs d'entrée personnalisés qui seront appliqués aux commandes.
+        custom-field-group: Groupe de champs personnalisés
+        default-field: Champs par défaut
+        custom-field: Champ personnalisé
+        type: Type de champ
+        select-type: Sélectionner le type de champ
+        add-option: Ajouter une option
+      select-message: Sélectionnez une configuration de commande à modifier, ou cliquez sur "Nouvelle config" pour créer une nouvelle configuration de commande.
+      new-config: Nouvelle config
+      loading-configuration: Chargement de vos configurations de commande...
+      select-order: Sélectionner la configuration de commande
+      save-changes: Sauvegarder les modifications
+      details: Détails
+      fields: Champs personnalisés
+      flow: Flux d'activité
+      entities: Entités
+    order-list-overlay:
+      search: Rechercher des commandes...
+      selected: Sélectionné
+      assign: Assigner à un conducteur...
+      cancel: Annuler les commandes...
+      delete: Supprimer les commandes...
+      actions: Actions
+      create-order: Créer une nouvelle commande...
+      create-fleet: Créer une nouvelle flotte...
+      active-order: Commandes actives
+      unassigned-order: Commandes non assignées  
+    place-form-panel:
+      success-message: lieu ({placeAddress}) enregistré avec succès.
+      place: Nouveau lieu
+      save-place: Sauvegarder le lieu
+      create-place: Créer un lieu
+      view-details: Voir les détails du lieu
+      cancel-edit-place: Annuler la modification du lieu
+      cancel-new-place: Annuler le nouveau lieu
+      street-1: Rue 1
+      street-2: Rue 2
+      neighborhood: Quartier
+      building: Bâtiment
+      security-code: Code d'accès sécurisé
+      postal-code: Code postal
+      state: État
+    place-panel:
+      edit-place: Modifier le lieu
+      cancel-edit-place: Annuler la modification du lieu
+      cancel-new-place: Annuler le nouveau lieu
+    route-list:
+      expand: Tapoter pour déplier
+      collapse: Tapoter pour replier
+      more-waypoints: plus de points de passage
+    settings-window:
+      success-message: Paramètres enregistrés avec succès.
+      title: Paramètres de FleetOps
+      save: Sauvegarder les modifications
+      name: Distance par défaut de ping ad hoc
+      name-text: Ce paramètre détermine la distance par défaut en mètres à laquelle les commandes ad hoc devraient signaler les conducteurs à proximité du point de collecte de la commande.
+      message: La distance doit être en mètres
+    vehicle-form-panel:
+      success-message: Véhicule ({vehicleName}) enregistré avec succès.
+      view-details: Voir les détails du véhicule
+      save-vehicle: Sauvegarder le véhicule
+      create-vehicle: Créer un véhicule      
+      cancel-edit-vehicle: Annuler la modification du véhicule
+      cancel-new-vehicle: Annuler le nouveau véhicule
+      upload-photo: Télécharger une nouvelle photo
+      new-vehicle: Nouveau véhicule
+      not-assigned: Aucun conducteur assigné
+      plate-number: Numéro de plaque
+      vin-number: Numéro VIN
+      make: Marque
+      vehicle-make: Marque du véhicule
+      model: Modèle
+      vehicle-model: Modèle du véhicule
+      year: Année
+      vehicle-year: Année du véhicule
+      driver-assigned: Conducteur assigné
+      select-driver: Sélectionner le conducteur
+      select-vehicle: Sélectionner le statut du véhicule
+      avatar: Avatar
+      select-map-avatar: Sélectionner l'avatar de la carte
+      select-avatar-rendering: Sélectionner un avatar à utiliser pour le rendu sur les cartes lors de l'utilisation des fonctionnalités de suivi géolocalisé.
+      select-avatar: Sélectionner l'avatar
+    vehicle-panel:
+      edit: Modifier le véhicule
+      close: Fermer les détails du véhicule
+      not-assigned: Aucun conducteur assigné
+      assign-driver: Assigner un conducteur au véhicule
+    vendor-form-panel:
+      success-message: Fournisseur ({vendorName}) enregistré avec succès.
+      create-form:
+        integrated-vendor: Choisissez un fournisseur intégré
+        custom-vendor: Créer un fournisseur personnalisé
+        title: Configuration
+        select-vendor-type: Sélectionner le type de fournisseur
+        choose-vendor: Choisissez un fournisseur intégré
+        provider: Fournisseur
+        credentials: Identifiants
+        advanced-options: Options avancées
+        hide-advanced-options: Masquer les options avancées
+        show-advanced-options: Afficher les options avancées
+        host: Hôte personnalisé
+        host-text: Fournissez éventuellement un hôte personnalisé qui devrait être utilisé pour cette intégration.
+        namespace: Espace de noms personnalisé
+        namespace-text: Fournissez éventuellement un espace de noms personnalisé ou une version d'API qui devrait être utilisée pour l'intégration.
+        webhook: URL du webhook
+        webhook-text: Les fournisseurs intégrés nécessiteront généralement cela afin que Fleetbase puisse recevoir des mises à jour d'activité sur la commande. Ne changez pas à moins que vous ne sachiez ce que vous faites ! Modifier cela pourrait interrompre vos mises à jour de commande !
+        select-integrated: Sélectionner un fournisseur intégré.
+        vendor-details: Détails du fournisseur
+        select-vendor-status: Sélectionner le statut du fournisseur
+        select-address: Sélectionner l'adresse
+        edit: Modifier
+        new-address: Nouvelle adresse
+        optionally: Fournissez éventuellement votre propre
+        configure-vendor: pour configurer ce fournisseur.
+        select: Sélectionner
+        name-text: Le nom du fournisseur, généralement le nom d'une entreprise.
+        email-text: L'email du fournisseur, cela peut être utilisé pour déclencher des emails au fournisseur.
+        phone-text: >-
+          Le numéro de téléphone du fournisseur, cela peut être utilisé pour déclencher des SMS ou des messages au fournisseur.
+        website-text: Le site web du fournisseur, ajoutez éventuellement le site web du fournisseur pour référence.
+      edit-form:
+        cancel-credentials: Annuler la réinitialisation des identifiants
+        sensitive-credentials: Les identifiants sensibles ne peuvent être réinitialisés que pour mettre à jour les identifiants, vous devez les saisir à nouveau.
+        reset-credentials: Cliquez ici pour réinitialiser les identifiants
+        select-address: Sélectionner l'adresse
+      view-details: Voir les détails du fournisseur
+      save-vendor: Sauvegarder le fournisseur
+      create-vendor: Créer un fournisseur      
+      cancel-edit-vendor: Annuler la modification du fournisseur
+      cancel-new-vendor: Annuler le nouveau fournisseur
+      upload-photo: Télécharger une nouvelle photo
+      new-vendor: Nouveau fournisseur
+    vendor-panel:
+      edit: Modifier le fournisseur
+      close: Fermer les détails du fournisseur
+      new-vendor: Nouveau fournisseur
+  management:
+    contacts:
+      index:
+        delete-button: Supprimer les contacts
+        updated: Mis à jour le
+        created: Créé le
+        view-contact: Voir les détails du contact
+        edit-contact: Modifier le contact
+        delete-contact: Supprimer le contact
+        edit:
+          title: Continuer sans enregistrer ?
+          body: Les modifications non enregistrées sur ce contact seront perdues. Cliquez sur continuer pour procéder.
+          button: Continuer sans enregistrer
+        title: Contacts
+        delete-contacts: Supprimer les contacts
+    drivers:
+      index:
+        assign-driver: Assigner le conducteur
+        view-details: Voir les détails du conducteur...
+        edit-details: Modifier les détails du conducteur...
+        assign-order-driver: Assigner la commande au conducteur...
+        assign-vehicle-driver: Assigner le véhicule au conducteur...
+        locate-driver-map: Localiser le conducteur sur la carte...
+        delete-driver: Supprimer le conducteur...
+        delete-button: Supprimer les conducteurs
+        order-driver: Assigner la commande à ce conducteur
+        assign-order: Assigner la commande
+        no-order-warning: Aucune commande sélectionnée !
+        assign-success: '{driverName} assigné à la commande.'
+        title-vehicle: Assigner le véhicule à ce conducteur
+        confirm-button: Confirmer & Créer
+        assign-vehicle: '{driverName} assigné au véhicule.'
+        locate-driver: Emplacement actuel de {driverName}
+        edit:
+          title: Continuer sans enregistrer ?
+          body: Les modifications non enregistrées sur ce conducteur seront perdues. Cliquez sur continuer pour procéder.
+          button: Continuer sans enregistrer
+        title: Conducteurs
+        delete-drivers: Supprimer les conducteurs  
+        search-placeholder: Rechercher des conducteurs 
+    fleets:
+      index:
+        view-fleet: Voir les détails de la flotte...
+        edit-fleet: Modifier les détails de la flotte...
+        assign-driver: Assigner un conducteur à la flotte...
+        delete-fleet: Supprimer la flotte...
+        delete-button: Supprimer les flottes
+        edit:
+          body: Les modifications non enregistrées sur cette flotte seront perdues. Cliquez sur continuer pour procéder.
+        title: Flottes
+        delete-fleets: Supprimer les flottes
+    fuel-reports:
+      index:
+        view: Voir les détails
+        edit-fuel: Modifier le rapport de carburant
+        delete: Supprimer le rapport de carburant
+        delete-button: Supprimer les rapports de carburant
+        edit:
+          body: Les modifications non enregistrées sur ce rapport de carburant seront perdues. Cliquez sur continuer pour procéder.
+        title: Rapports de carburant
+        delete-fuel-reports: Supprimer les rapports de carburant
+    issues:
+      index:
+        view: Voir les détails
+        edit-issues: Modifier les problèmes
+        delete: Supprimer les problèmes
+        delete-button: Supprimer les problèmes
+        edit:
+          body: Les modifications non enregistrées sur ce problème seront perdues. Cliquez sur continuer pour procéder.
+        title: Problèmes
+        delete-issues: Supprimer les problèmes
+    places:
+      index:
+        view-details: Voir les détails du lieu
+        edit-place: Modifier le lieu
+        view-place: Voir le lieu sur la carte
+        delete: Supprimer le lieu
+        title: Assigner ce lieu à un fournisseur
+        confirm-button: Confirmer & Créer
+        delete-button: Supprimer les lieux
+        success-message: 'Les détails de {placeName} ont été mis à jour.'
+        locate-title: Emplacement de {placeName}
+        edit:
+          body: Les modifications non enregistrées sur ce lieu seront perdues. Cliquez sur continuer pour procéder.
+        places-title: Lieux
+        delete-places: Supprimer les lieux
+    vehicles:
+      index:
+        view-vehicle: Voir les détails du véhicule...
+        edit-vehicle: Modifier les détails du véhicule...        
+        delete-vehicle: Supprimer le véhicule...
+        delete-button: Supprimer les véhicules
+        locate-action-title: Localiser les véhicules
+        locate-title: Emplacement actuel de {vehicleName}
+        edit:
+          body: Les modifications non enregistrées sur ce véhicule seront perdues. Cliquez sur continuer pour procéder.
+        title: Véhicules
+        delete-vehicles: Supprimer les véhicules
+    vendors:
+      index:
+        delete-button: Supprimer les fournisseurs
+        view-vendor: Voir les détails du fournisseur
+        edit-vendor: Modifier le fournisseur
+        delete-vendor: Supprimer le fournisseur
+        edit:
+          body: Les modifications non enregistrées sur ce fournisseur seront perdues. Cliquez sur continuer pour procéder.
+        title: Fournisseurs
+        delete-vendors: Supprimer les fournisseurs
+  operations:
+    order-config:
+      route-loading-message: Chargement du constructeur de configuration de commande
+    orders:
+      index:
+        payload: Chargement
+        customer: Client
+        facilitator: Facilitateur
+        pickup: Collecte
+        dropoff: Dépose
+        scheduled-at: Prévu le
+        items: Articles
+        transaction: Total de la transaction
+        tracking: Numéro de suivi
+        driver-assigned: Conducteur assigné
+        created-by: Créé par
+        updated-by: Mis à jour par
+        view-order: Voir la commande
+        cancel-order: Annuler la commande
+        delete-order: Supprimer la commande
+        cancel-title: Êtes-vous sûr de vouloir annuler cette commande ?
+        cancel-body: Une fois cette commande annulée, l'enregistrement de la commande sera toujours visible mais aucune activité ne pourra être ajoutée à cette commande.
+        cancel-success: Commande {orderId} annulée.
+        dispatch-title: Êtes-vous sûr de vouloir expédier cette commande ?
+        dispatch-body: Une fois cette commande expédiée, le conducteur assigné sera notifié.
+        dispatch-success: Commande {orderId} expédiée.          
+        map: Carte
+        table: Table
+        cancel-orders: Annuler les commandes
+        delete-orders: Supprimer les commandes
+        new:
+          create-new-customer: Créer un nouveau client
+          create-new-facilitator: Créer un nouveau facilitateur
+          create-new-place: Créer un nouveau lieu
+          add-order: Ajouter une entité à la commande
+          edit-order: Modifier les métadonnées de la commande
+          add-field: Ajouter un champ personnalisé
+          order-type: Type de commande
+          order-type-help-text: La sélection du type de commande indiquera à fleetbase quelles configurations de commande utiliser.
+          order-type-placeholder: Sélectionner le type de commande
+          internal-id: ID interne
+          internal-id-help-text: Utilisez ce champ pour définir éventuellement un identifiant personnalisé ou un identifiant interne pour la commande.
+          schedule: Planification
+          schedule-help-text: La date et l'heure auxquelles la commande sera expédiée. Si aucun conducteur n'est assigné au moment de l'expédition, l'expédition échouera. Si la commande est ad hoc, la commande sera signalée aux conducteurs à proximité du lieu de collecte.
+          customer: Client
+          customer-help-text: Assignez éventuellement le client de cette commande. S'il s'agit d'un nouveau client, utilisez le bouton 'Nouveau client' ci-dessus.
+          customer-placeholder: Sélectionner le client
+          facilitator: Facilitateur
+          facilitator-help-text: Assignez éventuellement un facilitateur pour cette commande, un facilitateur peut être un sous-traitant tiers ou un service qui facilitera le transport de cette commande.
+          facilitator-placeholder: Sélectionner le facilitateur
+          service-type: Type de service
+          service-type-placeholder: Sélectionner le type de service
+          service-type-help-text: Sélectionnez le type de service que vous souhaitez utiliser pour
+          assign-driver: Assigner le conducteur
+          assign-driver-help-text: Assignez le conducteur à qui cette commande sera expédiée.
+          assign-driver-placeholder: Sélectionner le conducteur
+          proof-delivery: Preuve de livraison
+          proof-delivery-help-text: Sélectionnez le type de preuve de livraison à exiger. Cela peut être soit un scan de code QR soit une méthode de signature.
+          proof-delivery-placeholder: Sélectionner la méthode de preuve de livraison
+          adhoc-ping: Distance de ping ad hoc
+          adhoc-ping-help-text: Ce paramètre détermine la distance de ping ad hoc pour cette commande, si non défini, il reviendra au paramètre par défaut.
+          adhoc-ping-message: La distance doit être en mètres
+          ad-hoc: Ad-Hoc
+          ad-hoc-help-text: Activer Ad-Hoc permettra à la commande de signaler intelligemment les conducteurs à proximité du lieu de collecte de la commande, permettant au premier conducteur disponible d'accepter la commande. C'est une alternative à l'assignation manuelle du conducteur pour les commandes en temps réel.
+          dispatch: Expédier immédiatement
+          dispatch-help-text: Activer l'expédition expédiera cette commande immédiatement après sa création.
+          require-proof: Exiger une preuve de livraison
+          require-proof-help-text: Activer cela exigera que le conducteur complète une preuve de livraison.
+          additional-details: Détails supplémentaires
+          metadata: Métadonnées
+          route: Itinéraire
+          route-label: Plusieurs points de dépose
+          optimize-route: Optimiser l'itinéraire
+          optimize-route-help-text: Fleetbase optimisera automatiquement l'itinéraire.
+          add-waypoint: Ajouter un point de passage
+          add-waypoint-help-text: Utilisez le bouton `Ajouter un point de passage` pour ajouter plus d'arrêts à cette commande. Le moteur de routage de Fleetbase optimisera automatiquement l'itinéraire à mesure que chaque arrêt est ajouté ou supprimé.
+          select-waypoint-placeholder: Sélectionner le point de passage
+          infoblock-text: n'est pas en mesure de prendre en charge cet emplacement.
+          invalid-coordinates: Coordonnées invalides !
+          pickup: Collecte
+          select-pickup: Sélectionner la collecte
+          dropoff: Dépose
+          select-dropoff: Sélectionner la dépose
+          return: Retour
+          edit-address: Modifier l'adresse
+          select-return: Sélectionner le retour
+          payload-entities: Chargement / Entités
+          add-item-order: Ajouter un article à la commande
+          items-drop: Articles déposés à
+          add-item-button: Ajouter un article
+          add-entity: Ajouter une entité
+          sku: SKU
+          select-destination: Sélectionner la destination
+          edit-item: Modifier l'article
+          apply-service-rate: Appliquer le tarif de service
+          service-help-text: Sélectionnez un tarif de service défini pour générer des devis de service en temps réel à appliquer à cette commande.
+          service-quotes: Devis de service
+          service-quotes-help-text: Sélectionnez quel tarif de service pour obtenir des devis.
+          select-service-rate: Sélectionner le tarif de service
+          refresh-button: Actualiser
+          loading-message: Chargement des devis de service...
+          info-text: Sélectionnez un devis de service en temps réel à appliquer à cette commande. Une fois un devis appliqué à la commande, il deviendra un tarif acheté. Les transactions seront suivies dans le grand livre de Fleetbase.
+          breakdown: Détail
+          no-service-info-text: Aucun devis de service.
+          input-order-info-text: Entrez l'itinéraire de la commande pour voir les devis de service.
+          notes-title: Notes
+          notes-placeholder: Entrez les notes de la commande ici....
+          success-message: Nouvelle commande {orderId} créée
+          warning-message: Aucun fichier dans la file d'attente à télécharger !
+          import-success: Importation terminée.
+          service-warning: Échec de la récupération des devis de service pour cette commande.
+          no-route-warning: Aucun itinéraire à prévisualiser.
+          route-error: Échec de l'optimisation de l'itinéraire, vérifiez l'entrée de l'itinéraire et réessayez.
+          custom-field-title: Ajouter un champ personnalisé à la commande
+          label-warning: Le champ personnalisé doit avoir une étiquette
+          value-warning: Le champ personnalisé doit avoir une valeur
+          edit-field-title: Modifier le champ personnalisé
+          edit-metadata: Modifier les métadonnées
+          input-field-required: Le champ {inputFieldName} est requis.
+        view:
+          purchase-rate-panel-title: Taux d'achat
+          documents-panel-title: Documents et fichiers
+          route-panel-title: Itinéraire
+          currency: Devise
+          comments-title: Commentaires
+          notes-title: Notes
+          dispatch: Expédier
+          order-actions: Actions de la commande
+          edit-details: Modifier les détails
+          update-activity: Mettre à jour l'activité
+          unassign-driver: Désassigner le conducteur
+          assign-driver: Assigner le conducteur
+          get-order-label: Obtenir l'étiquette de la commande
+          listen-socket-channel: Écouter le canal de socket
+          view-metadata: Voir les métadonnées
+          cancel-order: Annuler la commande
+          delete-order: Supprimer la commande
+          activity: Activité
+          unable-load-order-activity: Impossible de charger l'activité de la commande
+          ad-hoc: Ad-Hoc
+          customer: Client
+          facilitator: Facilitateur
+          driver-assigned: Conducteur assigné
+          change-driver: Changer de conducteur
+          tracking-number: Numéro de suivi
+          date-scheduled: Date prévue
+          date-dispatched: Date d'expédition
+          date-started: Date de début
+          order-details-title: Détails de la commande
+          additional-details-title: Détails supplémentaires
+          route: Itinéraire
+          pickup: Collecte
+          dropoff: Dépose
+          return: Retour
+          order-summary: Résumé de la commande
+          subtotal: Sous-total
+          delivery-fee: Frais de livraison
+          tip: Pourboire
+          delivery-tip: Pourboire de livraison
+          total: Total
+          payload: Chargement
+          items-drop: Articles déposés à
+          tracking: Suivi
+          waypoint-actions: Actions du point de passage
+          get-label: Obtenir l'étiquette
+          view-activity: Voir l'activité
+          add-item-button: Ajouter un article
+          edit-item-button: Modifier un article
+          edit-order-title: Modifier les détails de la commande
+          update-success: 'Les détails de {orderId} ont été mis à jour.'
+          order-metadata: Métadonnées de la commande
+          unassign-title: Êtes-vous sûr de vouloir désassigner le conducteur ({driverName}) de cette commande ?
+          unassign-body: Une fois le conducteur désassigné, il n'aura plus accès aux détails de cette commande.
+          unassign-success: Le conducteur a été désassigné de cette commande.
+          edit-route-title: Modifier l'itinéraire de la commande
+          route-error: Échec de l'optimisation de l'itinéraire, vérifiez l'entrée de l'itinéraire et réessayez.
+          route-update-success: 'Les détails de l'itinéraire de {orderId} ont été mis à jour.'
+          add-activity-title: Ajouter une nouvelle activité à la commande
+          invalid-warning: Entrée de statut personnalisé invalide.
+          change-order: Changer le conducteur de la commande
+          assign-order: Assigner le conducteur à la commande
+          assign-success: 'Le conducteur assigné à {orderId} a été mis à jour.'
+          order-title: Étiquette de la commande
+          waypoint-title: Étiquette du point de passage
+          proof-of-delivery: Preuve de livraison
+          notes-placeholder: Entrez les notes de la commande ici....
+          save-order-note: Sauvegarder la note de la commande
+          order-notes-updated: Notes de la commande mises à jour.
+        config:
+          title: Configuration des commandes
+          message: Les configurations de commande vous permettent de définir des configurations dynamiques qui indiqueront à Fleetbase comment différents types de commandes doivent être exécutés.
+          configuration: Configuration
+          types:
+            no-order-installed: Aucune configuration de commande installée !
+            you-have-no-configs: Vous n'avez actuellement aucune configuration de commande installée, consultez les extensions pour installer une configuration de commande pour commencer.
+            view-extensions: Voir les extensions
+    scheduler:
+      index:
+        success-message: Commande {orderId} planifiée à {orderAt}.
+        info-message: Commande {orderId} déplanifiée.
+        title: Planificateur
+        unscheduled-orders: Commandes non planifiées
+        scheduled-orders: Commandes planifiées
+    service-rates:
+      index:
+        edit-service: Modifier le tarif de service
+        delete-service: Supprimer le tarif de service
+        accept-button: Supprimer les services
+        edit:
+          success-message: Tarif de service {serviceName} mis à jour
+        title: Tarifs de service
+        reload-data: Recharger les données
+        delete-service-rates: Supprimer les tarifs de service
+        new:
+          success-message: Nouveau tarif de service {serviceName} créé
+          new-service-rate-title: Nouveau tarif de service
+          save-service-button: Sauvegarder le tarif de service
+          create-service-button: Créer un tarif de service
+          service-name: Nom du service
+          service-name-help-text: Nom d'affichage pour ce service.
+          service-order-label: Type de commande de service
+          service-order-help-text: Sélectionnez une configuration de commande à laquelle ce tarif de service sera exclusivement appliqué. Cela garantit que seules les commandes créées avec la configuration de commande sélectionnée peuvent utiliser ce tarif de service spécifique.
+          service-order-placeholder: Sélectionner le type de commande pour restreindre le service
+          base-fee-label: Frais de base
+          base-fee-help-text: Définissez des frais de base qui représentent le coût minimum pour ce service.
+          rate-calculation-label: Méthode de calcul du tarif
+          rate-calculation-help-text: La méthode que ce service utilisera pour calculer les tarifs lorsqu'il est interrogé.
+          rate-calculation-placeholder: Sélectionner la méthode de calcul du tarif
+          estimated-days: Jours de livraison estimés
+          estimated-days-help-text: Le nombre estimé de jours que ce service prendra. Pour un service le même jour, utilisez `0`.
+          duration-terms-label: Conditions de durée
+          duration-terms-help-text: Ajoutez des conditions supplémentaires de service concernant la durée pour ce tarif de service.
+          duration-terms-placeholder: Conditions de durée si applicable
+          fixed-meter: Options de mètre fixe
+          fixed-meter-text: Cette option définit des frais fixes par kilomètre.
+          fixed-meter-example-text: >-
+            Par exemple : Chaque kilomètre un frais fixe est défini. Si la distance parcourue par la commande est de 3 300 mètres, le frais fixe pour le 3e kilomètre sera ajouté à la somme des frais de base.
+          maximum-distance: Distance maximale
+          maximum-distance-help-text: La distance maximale desservie.
+          distance: Distance
+          fee: Frais
+          per-drop-off-title: Options par dépôt
+          per-drop-off-text: Cette option définit des frais fixes par dépôts.
+          per-drop-off-example-text: >-
+            Par exemple : 1-5 dépôts dans la commande coûteront un montant de $x, 5-10 dépôts par commande coûteront un montant de $x. Ceci sera ajouté à la somme des frais de base.
+          add-drop-off-button: Ajouter une plage de dépôt
+          min-drop: Dépôt min
+          max-drop: Dépôt max
+          min: Min
+          max: Max
+          per-meter: Par mètre
+          per-meter-text: Cette option permet au service d'être calculé par kilomètre ou mètre, cela signifie que vous définissez des frais fixes qui sont ensuite multipliés par la distance qui peut être soit en mètre soit en kilomètre.
+          per-meter-example-text: >-
+            Par exemple : '{fee}' * '{distance}' + '{baseFee}'
+          per-meter-rate-fee: Frais forfaitaire par mètre
+          per-meter-rate-fee-help-text: Le frais forfaitaire unique qui sera multiplié par la distance.
+          distance-unit: Unité de distance
+          distance-unit-help-text: L'unité de distance peut être soit par kilomètre soit par mètre.
+          distance-unit-placeholder: Sélectionner l'unité de distance.
+          custom-algorithm-title: Algorithme personnalisé
+          custom-algorithm-info-message: Cette option est de définir un calcul personnalisé pour les frais de ce service avec des variables.
+          custom-algorithm-info-second-message: Notez que les variables doivent être entourées d'une seule accolade.
+          distance-message: distance
+          distance-continue-message: >- 
+            - la distance en mètres de l'itinéraire de la commande.
+          time-message: temps
+          time-continue-message: >-
+            - l'ETA de l'itinéraire en secondes.
+          example: Exemple
+          example-message: Si la demande de commande est une distance de 2 200 mètres avec un ETA de 30 minutes.
+          example-second-message: Alors la formule suivante calculera des frais de service de 2,50 $, qui seront ajoutés aux frais de base.
+          algorithm-label: Algorithme
+          algorithm-help-text: Définissez une formule à évaluer pour ce calcul de tarif de service.
+          algorithm-placeholder: >-
+            (( '{distance}' / 50 ) * .05 ) + (( '{time}' / 60 ) * .01)
+          percel-fee-title: Frais de colis
+          length-label: Longueur
+          length-placeholder: Longueur en {parcelFeeDimension}
+          width-label: Largeur
+          width-placeholder: Largeur en {parcelFeeDimension}
+          height-label: Hauteur
+          height-placeholder: Hauteur en {parcelFeeDimension}
+          weight-label: Poids
+          weight-placeholder: Poids en {parcelFeeWeight}
+          deminsions-unit: Unité de dimensions
+          select-unit-placeholder: Sélectionner l'unité
+          weight-unit: Unité de poids
+          additional-fee: Frais supplémentaires
+          cash-delivery-title: Paiement à la livraison
+          cash-delivery-label: Activer des frais supplémentaires pour les commandes `paiement à la livraison` ?
+          calculation-method-label: Méthode de calcul des frais de paiement à la livraison
+          calculation-method-help-text: Méthode utilisée pour calculer les frais de COD.
+          calculation-method-placeholder: Sélectionner la méthode de calcul des frais de COD
+          delivery-flat-fee: Frais forfaitaires de paiement à la livraison
+          delivery-flat-fee-help-text: Définit des frais forfaitaires à ajouter pendant les heures de pointe.
+          fee-percentage: Pourcentage des frais de paiement à la livraison
+          fee-percentage-help-text: Définit un pourcentage basé sur les frais du tarif de service subtotal à ajouter en tant que frais de COD.
+          percentage-placeholder: Pourcentage
+          peak-hours-title: Heures de pointe
+          peak-hours-label: Activer des frais supplémentaires pour les commandes effectuées pendant les heures de pointe définies par le service ?
+          peak-hours-start-label: Début des heures de pointe
+          peak-hours-start-help-text: Définit l'heure à laquelle commence le frais des heures de pointe.
+          peak-hours-end-label: Fin des heures de pointe
+          peak-hours-end-help-text: Définit l'heure à laquelle se termine le frais des heures de pointe.
+          peak-hours-fee-label: Méthode de calcul des frais des heures de pointe
+          peak-hours-fee-help-text: Méthode utilisée pour calculer les frais des heures de pointe.
+          peak-hours-fee-placeholder: Sélectionner la méthode de calcul des frais des heures de pointe
+          flat-fee-label: Frais forfaitaires des heures de pointe
+          flat-fee-help-text: Définit des frais forfaitaires à ajouter pendant les heures de pointe.
+          peak-hours-percentage-label: Pourcentage des frais des heures de pointe
+          peak-hours-percentage-help-text: Définit un pourcentage basé sur les frais du tarif de service subtotal à ajouter pendant les heures de pointe.
+          restrict-service-title: Restreindre le service
+          service-area-label: Zone de service
+          service-area-help-text: Restreindre ce service aux demandes de commande provenant d'une zone de service.
+          service-area-placeholder: Restreindre à la zone de service
+          zone-label: Zone
+          zone-help-text: Restreindre ce service aux demandes de commande provenant d'une zone spécifique.
+          zone-placeholder: Restreindre à la zone
+  settings:
+    navigator-app:
+      navigator-app-settings: Paramètres de l'application Navigator
